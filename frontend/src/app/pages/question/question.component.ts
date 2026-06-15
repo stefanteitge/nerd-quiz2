@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuizQuestion } from '../../models/quiz.model';
 import { QuizService } from '../../services/quiz.service';
@@ -22,43 +22,19 @@ interface QuestionOptionViewModel {
   styleUrl: './question.component.scss'
 })
 export class QuestionComponent implements OnInit, OnDestroy {
-  currentQuestion: QuizQuestion | null = null;
-  questionImageUrl: string | null = null;
-  answerImageUrl: string | null = null;
-  phase: QuestionPhase = 'idle';
-  countdownValue = 3;
-  votingSecondsLeft = 5;
-  votingProgress = 100;
-  questionNumber = 0;
-  totalQuestions = 0;
+  readonly currentQuestion = signal<QuizQuestion | null>(null);
+  readonly questionImageUrl = signal<string | null>(null);
+  readonly answerImageUrl = signal<string | null>(null);
+  readonly phase = signal<QuestionPhase>('idle');
+  readonly countdownValue = signal(3);
+  readonly votingSecondsLeft = signal(5);
+  readonly votingProgress = signal(100);
+  readonly questionNumber = signal(0);
+  readonly totalQuestions = signal(0);
 
-  private readonly timeouts: number[] = [];
-
-  constructor(
-    private readonly quizService: QuizService,
-    private readonly router: Router
-  ) {}
-
-  ngOnInit(): void {
-    const quiz = this.quizService.getCurrentQuiz();
-
-    if (!quiz) {
-      void this.router.navigate(['/start']);
-      return;
-    }
-
-    this.totalQuestions = quiz.questions.length;
-    this.loadNextQuestion();
-  }
-
-  ngOnDestroy(): void {
-    this.clearTimers();
-  }
-
-  get options(): QuestionOptionViewModel[] {
-    if (!this.currentQuestion) {
-      return [];
-    }
+  readonly options = computed<QuestionOptionViewModel[]>(() => {
+    const q = this.currentQuestion();
+    if (!q) return [];
 
     const optionConfig: Array<{ key: OptionKey; label: string }> = [
       { key: 'green', label: 'Green card' },
@@ -68,45 +44,54 @@ export class QuestionComponent implements OnInit, OnDestroy {
 
     return optionConfig
       .map(({ key, label }) => {
-        const option = this.currentQuestion?.options[key];
-
-        if (!option) {
-          return null;
-        }
-
-        return {
-          key,
-          label,
-          answer: option.answer,
-          correct: !!option.correct
-        };
+        const option = q.options[key];
+        if (!option) return null;
+        return { key, label, answer: option.answer, correct: !!option.correct };
       })
-      .filter((option): option is QuestionOptionViewModel => option !== null);
-  }
+      .filter((o): o is QuestionOptionViewModel => o !== null);
+  });
 
-  get phaseLabel(): string {
-    switch (this.phase) {
+  readonly phaseLabel = computed<string>(() => {
+    switch (this.phase()) {
       case 'countdown':
-        return `Show your cards in ${this.countdownValue}`;
+        return `Show your cards in ${this.countdownValue()}`;
       case 'voting':
-        return `Voting... ${this.votingSecondsLeft}s`;
+        return `Voting... ${this.votingSecondsLeft()}s`;
       case 'revealed': {
-        const correctOption = this.options.find((option) => option.correct);
+        const correctOption = this.options().find((o) => o.correct);
         return correctOption ? `Correct answer: ${correctOption.label}` : 'Reveal!';
       }
       default:
         return 'Read the question, then smash VOTE!';
     }
+  });
+
+  private readonly timeouts: ReturnType<typeof setTimeout>[] = [];
+
+  constructor(
+    private readonly quizService: QuizService,
+    private readonly router: Router
+  ) {}
+
+  ngOnInit(): void {
+    const quiz = this.quizService.getCurrentQuiz();
+    if (!quiz) {
+      void this.router.navigate(['/start']);
+      return;
+    }
+    this.totalQuestions.set(quiz.questions.length);
+    this.loadNextQuestion();
+  }
+
+  ngOnDestroy(): void {
+    this.clearTimers();
   }
 
   startVote(): void {
-    if (!this.currentQuestion || this.phase !== 'idle') {
-      return;
-    }
-
+    if (!this.currentQuestion() || this.phase() !== 'idle') return;
     this.clearTimers();
-    this.phase = 'countdown';
-    this.countdownValue = 3;
+    this.phase.set('countdown');
+    this.countdownValue.set(3);
     this.runCountdown();
   }
 
@@ -116,17 +101,14 @@ export class QuestionComponent implements OnInit, OnDestroy {
 
   getOptionClass(option: QuestionOptionViewModel): string {
     const classes = ['option-card', option.key];
-
-    if (this.phase === 'revealed') {
+    if (this.phase() === 'revealed') {
       classes.push(option.correct ? 'revealed-correct' : 'revealed-muted');
     }
-
     return classes.join(' ');
   }
 
   private loadNextQuestion(): void {
     this.clearTimers();
-
     const nextQuestion = this.quizService.getNextQuestion();
 
     if (!nextQuestion) {
@@ -135,78 +117,65 @@ export class QuestionComponent implements OnInit, OnDestroy {
       return;
     }
 
-    this.currentQuestion = nextQuestion;
-    this.phase = 'idle';
-    this.countdownValue = 3;
-    this.votingSecondsLeft = 5;
-    this.votingProgress = 100;
-    this.questionNumber += 1;
+    this.currentQuestion.set(nextQuestion);
+    this.phase.set('idle');
+    this.countdownValue.set(3);
+    this.votingSecondsLeft.set(5);
+    this.votingProgress.set(100);
+    this.questionNumber.update((n) => n + 1);
 
     const quizUrl = this.quizService.getCurrentQuizUrl();
-    this.questionImageUrl =
+    this.questionImageUrl.set(
       quizUrl && nextQuestion.questionImage
         ? this.quizService.getImageUrl(quizUrl, nextQuestion.questionImage)
-        : null;
-    this.answerImageUrl =
+        : null
+    );
+    this.answerImageUrl.set(
       quizUrl && nextQuestion.answerImage
         ? this.quizService.getImageUrl(quizUrl, nextQuestion.answerImage)
-        : null;
+        : null
+    );
   }
 
   private runCountdown(): void {
-    if (this.countdownValue <= 1) {
-      this.registerTimeout(() => this.startVotingWindow(), 1000);
+    if (this.countdownValue() <= 1) {
+      this.addTimeout(() => this.startVotingWindow(), 1000);
       return;
     }
-
-    this.registerTimeout(() => {
-      this.countdownValue -= 1;
+    this.addTimeout(() => {
+      this.countdownValue.update((v) => v - 1);
       this.runCountdown();
     }, 1000);
   }
 
   private startVotingWindow(): void {
-    this.phase = 'voting';
-    this.votingSecondsLeft = 5;
-    this.votingProgress = 100;
+    this.phase.set('voting');
+    this.votingSecondsLeft.set(5);
+    this.votingProgress.set(100);
     this.runVotingTick();
   }
 
   private runVotingTick(): void {
-    this.registerTimeout(() => {
-      this.votingSecondsLeft -= 1;
-      this.votingProgress = (this.votingSecondsLeft / 5) * 100;
-
-      if (this.votingSecondsLeft <= 0) {
-        this.phase = 'revealed';
+    this.addTimeout(() => {
+      const next = this.votingSecondsLeft() - 1;
+      this.votingSecondsLeft.set(next);
+      this.votingProgress.set((next / 5) * 100);
+      if (next <= 0) {
+        this.phase.set('revealed');
         return;
       }
-
       this.runVotingTick();
     }, 1000);
   }
 
-  private registerTimeout(callback: () => void, delay: number): void {
-    const timeoutId = window.setTimeout(() => {
-      const index = this.timeouts.indexOf(timeoutId);
-
-      if (index >= 0) {
-        this.timeouts.splice(index, 1);
-      }
-
-      callback();
-    }, delay);
-
-    this.timeouts.push(timeoutId);
+  private addTimeout(callback: () => void, delay: number): void {
+    const id = setTimeout(callback, delay);
+    this.timeouts.push(id);
   }
 
   private clearTimers(): void {
     while (this.timeouts.length) {
-      const timeoutId = this.timeouts.pop();
-
-      if (timeoutId !== undefined) {
-        clearTimeout(timeoutId);
-      }
+      clearTimeout(this.timeouts.pop());
     }
   }
 }

@@ -1,22 +1,22 @@
 <main class="page-shell">
-  @if (currentQuestion) {
+  @if (currentQuestion()) {
     <section class="page-card question-card">
       <header class="question-header">
         <div>
-          <p class="page-eyebrow">Question {{ questionNumber }} / {{ totalQuestions }}</p>
-          <h1 class="page-title question-title">{{ currentQuestion.title }}</h1>
+          <p class="page-eyebrow">Question {{ questionNumber() }} / {{ totalQuestions() }}</p>
+          <h1 class="page-title question-title">{{ currentQuestion()!.title }}</h1>
         </div>
-        <p class="phase-banner">{{ phaseLabel }}</p>
+        <p class="phase-banner">{{ phaseLabel() }}</p>
       </header>
 
-      @if (questionImageUrl) {
+      @if (questionImageUrl()) {
         <figure class="image-frame">
-          <img [src]="questionImageUrl" [alt]="currentQuestion.title" />
+          <img [src]="questionImageUrl()" [alt]="currentQuestion()!.title" />
         </figure>
       }
 
       <section class="options-grid" aria-label="Answer options">
-        @for (option of options; track option.key) {
+        @for (option of options(); track option.key) {
           <article [class]="getOptionClass(option)">
             <span class="card-indicator" [class.green]="option.key === 'green'" [class.red]="option.key === 'red'" [class.both]="option.key === 'both'">
               {{ option.label }}
@@ -26,45 +26,45 @@
         }
       </section>
 
-      @if (phase === 'countdown') {
-        <div class="countdown-display" aria-live="polite">{{ countdownValue }}</div>
+      @if (phase() === 'countdown') {
+        <div class="countdown-display" aria-live="polite">{{ countdownValue() }}</div>
       }
 
-      @if (phase === 'voting') {
+      @if (phase() === 'voting') {
         <section class="voting-panel" aria-live="polite">
           <div class="voting-copy">
             <span class="card-indicator both">Voting in progress</span>
-            <strong>{{ votingSecondsLeft }} seconds left</strong>
+            <strong>{{ votingSecondsLeft() }} seconds left</strong>
           </div>
           <div class="progress-track" aria-hidden="true">
-            <div class="progress-bar" [style.width.%]="votingProgress"></div>
+            <div class="progress-bar" [style.width.%]="votingProgress()"></div>
           </div>
         </section>
       }
 
-      @if (phase === 'revealed') {
+      @if (phase() === 'revealed') {
         <section class="answer-panel">
-          @if (currentQuestion.explanation) {
+          @if (currentQuestion()!.explanation) {
             <div class="explanation-block">
               <span class="card-indicator green">Explanation</span>
-              <p>{{ currentQuestion.explanation }}</p>
+              <p>{{ currentQuestion()!.explanation }}</p>
             </div>
           }
 
-          @if (answerImageUrl) {
+          @if (answerImageUrl()) {
             <figure class="image-frame answer-image">
-              <img [src]="answerImageUrl" alt="Answer explanation image" />
+              <img [src]="answerImageUrl()" alt="Answer explanation image" />
             </figure>
           }
         </section>
       }
 
       <footer class="question-actions">
-        @if (phase === 'idle') {
+        @if (phase() === 'idle') {
           <button class="neon-button vote-button" type="button" (click)="startVote()">VOTE!</button>
         }
 
-        @if (phase === 'revealed') {
+        @if (phase() === 'revealed') {
           <button class="neon-button secondary-button" type="button" (click)="nextQuestion()">
             NEXT
           </button>
