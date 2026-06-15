@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "id": "jedi",
+      "title": "Which of the following is not a type of Force user?",
+      "questionImage": "jedi.png",
+      "answerImage": null,
+      "options": {
+        "red": {
+          "answer": "Jaws"
+        },
+        "green": {
+          "answer": "Jedi",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "kernel",
+      "title": "Line 577 of bat_v_elp.c in Linux kernel",
+      "questionImage": "kernel.png",
+      "answerImage": "kernel_correct.png",
+      "explanation": "B.A.T.M.A.N. is a routing protocol for multi-hop mobile ad hoc networks which is under development by the German Freifunk community.",
+      "options": {
+        "red": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATWOMAN_V\") != 0)"
+        },
+        "green": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATMAN_V\") != 0)",
+          "correct": true
+        },
+        "both": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BAT*_V\") != 0)"
+        }
+      }
+    },
+    {
+      "id": "swallow",
+      "title": "What is the airspeed velocity of an unladen swallow?",
+      "questionImage": "swallow.png",
+      "answerImage": null,
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "12 knots"
+        },
+        "green": {
+          "answer": "What do you mean? An African or European swallow?",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick",
+      "title": "Can you lick it?",
+      "description": "Palladium",
+      "questionImage": "swallow.png",
+      "answerImage": null,
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "See you on the other side"
+        },
+        "green": {
+          "answer": "Sure, go for it",
+          "correct": true
+        },
+        "both": null
+      }
+    }
+  ]
+}

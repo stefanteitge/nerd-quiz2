@@ -34,7 +34,8 @@ export class QuizService {
   }
 
   getImageUrl(quizUrl: string, imageName: string): string {
-    return new URL(`images/${imageName}`, quizUrl).toString();
+    const base = quizUrl.substring(0, quizUrl.lastIndexOf('/') + 1);
+    return `${base}images/${imageName}`;
   }
 
   getNextQuestion(): QuizQuestion | null {
