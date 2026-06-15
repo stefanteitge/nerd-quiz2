@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  min-height: 100%;
+}
+
+:root {
+  --bg-dark: #0d0d1a;
+  --bg-card: rgba(26, 26, 46, 0.88);
+  --bg-card-strong: rgba(12, 14, 32, 0.92);
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-purple: #9d00ff;
+  --neon-yellow: #ffff00;
+  --green-card: #00ff88;
+  --red-card: #ff2244;
+  --text-primary: #e0e0ff;
+  --text-muted: #97a0d8;
+  --shadow-pink: 0 0 12px rgba(255, 0, 255, 0.8);
+  --shadow-cyan: 0 0 18px rgba(0, 255, 255, 0.7);
+  --shadow-green: 0 0 18px rgba(0, 255, 136, 0.65);
+  --shadow-red: 0 0 18px rgba(255, 34, 68, 0.65);
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-dark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(157, 0, 255, 0.22), transparent 30%),
+    radial-gradient(circle at bottom, rgba(0, 255, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, #080812 0%, #110b22 55%, #07070f 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-card {
+  width: min(1200px, 100%);
+  padding: clamp(1.5rem, 3vw, 3rem);
+  border: 2px solid rgba(0, 255, 255, 0.35);
+  border-radius: 24px;
+  background: var(--bg-card);
+  box-shadow:
+    0 0 40px rgba(157, 0, 255, 0.3),
+    inset 0 0 24px rgba(0, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.page-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--neon-cyan);
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  text-shadow: var(--shadow-cyan);
+}
+
+.page-title {
+  margin: 0;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  color: #fff;
+  text-shadow: var(--shadow-pink), var(--shadow-cyan);
+}
+
+.page-subtitle {
+  margin: 1rem 0 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--text-muted);
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  line-height: 1.6;
+}
+
+.neon-button {
+  border: 2px solid var(--neon-pink);
+  border-radius: 999px;
+  padding: 1rem 1.8rem;
+  background: linear-gradient(90deg, rgba(255, 0, 255, 0.2), rgba(0, 255, 255, 0.18));
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: var(--shadow-pink);
+}
+
+.neon-button:hover:not(:disabled),
+.neon-button:focus-visible:not(:disabled) {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shadow-pink), var(--shadow-cyan);
+  outline: none;
+}
+
+.neon-button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.neon-input {
+  width: 100%;
+  border: 2px solid rgba(0, 255, 255, 0.45);
+  border-radius: 18px;
+  padding: 1rem 1.15rem;
+  background: rgba(10, 14, 32, 0.92);
+  color: var(--text-primary);
+  box-shadow: inset 0 0 18px rgba(0, 255, 255, 0.08);
+}
+
+.neon-input:focus {
+  outline: none;
+  border-color: var(--neon-pink);
+  box-shadow: var(--shadow-pink);
+}
+
+.card-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.card-indicator::before {
+  content: '';
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px currentColor;
+  background: currentColor;
+}
+
+.green {
+  color: var(--green-card);
+}
+
+.red {
+  color: var(--red-card);
+}
+
+.both {
+  color: var(--neon-yellow);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

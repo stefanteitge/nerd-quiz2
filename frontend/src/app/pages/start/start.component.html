@@ -1,0 +1,44 @@
+<main class="page-shell">
+  <section class="page-card start-card">
+    <p class="page-eyebrow">Quiz source selection</p>
+    <h1 class="page-title">Load the question library</h1>
+    <p class="page-subtitle">
+      Choose the default GitHub-hosted quiz, or paste the raw URL to a custom
+      <code>quiz.json</code> file.
+    </p>
+
+    <div class="action-grid">
+      <button class="neon-button" type="button" [disabled]="loading" (click)="startDefaultQuiz()">
+        {{ loading ? 'Loading...' : 'Start Default Quiz' }}
+      </button>
+
+      <div class="source-panel">
+        <label class="source-label" for="custom-quiz-url">Custom GitHub quiz source URL</label>
+        <input
+          id="custom-quiz-url"
+          class="neon-input"
+          type="url"
+          [(ngModel)]="customQuizUrl"
+          placeholder="https://raw.githubusercontent.com/owner/repo/branch/path/quiz.json"
+        />
+        <button
+          class="neon-button secondary"
+          type="button"
+          [disabled]="loading"
+          (click)="startCustomQuiz()"
+        >
+          Start Custom Quiz
+        </button>
+      </div>
+    </div>
+
+    <div class="default-source">
+      <span class="card-indicator both">Default source</span>
+      <code>{{ defaultQuizUrl }}</code>
+    </div>
+
+    @if (errorMessage) {
+      <p class="error-banner" role="alert">{{ errorMessage }}</p>
+    }
+  </section>
+</main>

@@ -1,0 +1,20 @@
+<main
+  class="page-shell instructions-page"
+  (click)="goNext()"
+  (keydown.enter)="goNext()"
+  (keydown.space)="goNext()"
+  tabindex="0"
+>
+  <section class="page-card instructions-card">
+    <p class="page-eyebrow">How it is played</p>
+    <h1 class="page-title">Rules of engagement</h1>
+
+    <ul class="rules-list">
+      @for (rule of rules; track rule) {
+        <li>{{ rule }}</li>
+      }
+    </ul>
+
+    <p class="page-subtitle">Click anywhere to calibrate the quiz source.</p>
+  </section>
+</main>

@@ -1,0 +1,21 @@
+.instructions-page {
+  cursor: pointer;
+}
+
+.instructions-card {
+  max-width: 980px;
+}
+
+.rules-list {
+  margin: 2rem 0 0;
+  padding-left: clamp(1.25rem, 2vw, 2rem);
+  display: grid;
+  gap: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(1.15rem, 2.1vw, 2rem);
+  line-height: 1.45;
+}
+
+.rules-list li::marker {
+  color: var(--neon-pink);
+}
