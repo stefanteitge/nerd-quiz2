@@ -19,7 +19,7 @@
     {
       "id": "kernel",
       "title": "Line 577 of bat_v_elp.cin Linux kernel",
-      "questionImage": "one.png",
+      "questionImage": "kernel.png",
       "answerImage": null,
       "explanation": "B.A.T.M.A.N. is a routing protocol for multi-hop mobile ad hoc networks which is under development by the German Freifunk community.",
       "options": {
