@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit, computed, signal } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuizQuestion } from '../../models/quiz.model';
 import { QuizService } from '../../services/quiz.service';
@@ -31,6 +31,13 @@ export class QuestionComponent implements OnInit, OnDestroy {
   readonly votingProgress = signal(100);
   readonly questionNumber = signal(0);
   readonly totalQuestions = signal(0);
+
+  readonly visibleImageUrl = computed<string | null>(() => {
+    if (this.phase() === 'revealed' && this.answerImageUrl()) {
+      return this.answerImageUrl();
+    }
+    return this.questionImageUrl();
+  });
 
   readonly options = computed<QuestionOptionViewModel[]>(() => {
     const q = this.currentQuestion();
@@ -105,6 +112,15 @@ export class QuestionComponent implements OnInit, OnDestroy {
       classes.push(option.correct ? 'revealed-correct' : 'revealed-muted');
     }
     return classes.join(' ');
+  }
+
+  @HostListener('document:keydown.enter')
+  onEnter(): void {
+    if (this.phase() === 'idle') {
+      this.startVote();
+    } else if (this.phase() === 'revealed') {
+      this.nextQuestion();
+    }
   }
 
   private loadNextQuestion(): void {

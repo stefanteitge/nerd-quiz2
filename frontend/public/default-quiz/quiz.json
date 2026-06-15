@@ -56,7 +56,7 @@
       "id": "lick",
       "title": "Can you lick it?",
       "description": "Palladium",
-      "questionImage": "swallow.png",
+      "questionImage": "default.png",
       "answerImage": null,
       "explanation": "It's just the right answer",
       "options": {

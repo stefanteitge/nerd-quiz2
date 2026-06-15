@@ -34,7 +34,16 @@
 }
 
 .question-title {
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+}
+
+.question-description {
+  margin: 0.5rem 0 0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--text-muted);
+  line-height: 1.5;
+  white-space: pre-line;
 }
 
 .phase-banner {
@@ -184,10 +193,6 @@
   font-size: clamp(1.1rem, 1.7vw, 1.45rem);
   line-height: 1.6;
   white-space: pre-line;
-}
-
-.answer-image img {
-  max-height: 18vh;
 }
 
 .question-actions {

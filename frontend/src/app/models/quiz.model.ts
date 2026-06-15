@@ -6,6 +6,7 @@ export interface QuizOption {
 export interface QuizQuestion {
   id: string;
   title: string;
+  description?: string | null;
   questionImage?: string | null;
   answerImage?: string | null;
   explanation?: string | null;
