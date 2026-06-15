@@ -55,8 +55,8 @@
       "id": "lick1",
       "title": "Can you lick it?",
       "description": "Palladium",
-      "questionImage": "default.png",
-      "answerImage": null,
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
       "explanation": "It's just the right answer",
       "options": {
         "red": {
@@ -73,8 +73,8 @@
       "id": "lick2",
       "title": "Can you lick it?",
       "description": "Rubidium ",
-      "questionImage": "default.png",
-      "answerImage": null,
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
       "explanation": "It's just the right answer",
       "options": {
         "red": {
@@ -91,8 +91,8 @@
       "id": "lick3",
       "title": "Can you lick it?",
       "description": "Moscovium",
-      "questionImage": "default.png",
-      "answerImage": null,
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
       "explanation": "It's just the right answer",
       "options": {
         "red": {
@@ -109,8 +109,8 @@
       "id": "lick4",
       "title": "Can you lick it?",
       "description": "Xenon",
-      "questionImage": "default.png",
-      "answerImage": null,
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
       "explanation": "But it is a gas",
       "options": {
         "red": {
@@ -287,7 +287,7 @@
           "answer": "Reboot the server"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "vim.png"
     },
     {
       "id": "dog",
@@ -332,7 +332,7 @@
           "answer": "A story of towels"
         }
       },
-      "answerImage": "default.png"
+      "questionImage": "hitchhiker.png"
     },
     {
       "id": "square-root",
@@ -349,7 +349,71 @@
           "correct": true
         }
       },
-      "answerImage": "square-root.png"
+      "questionImage": "square-root.png"
+    },
+    {
+      "id": "alphabet",
+      "title": "Whats your favorite color of the alphabet?",
+      "options": {
+        "red": {
+          "answer": "true"
+        },
+        "green": {
+          "answer": "false",
+          "correct": true
+        }
+      },
+      "questionImage": "alphabet.png"
+    },
+    {
+      "id": "python",
+      "title": "Which is the worst programming language?",
+      "options": {
+        "red": {
+          "answer": "Python",
+          "correct": true
+        },
+        "green": {
+          "answer": "Python",
+          "correct": true
+        },
+        "both": {
+          "answer": "Python",
+          "correct": true
+        }
+      },
+      "questionImage": "python.png"
+    },
+    {
+      "id": "feed",
+      "title": "Don't feed after midnight?",
+      "options": {
+        "red": {
+          "answer": "Mogwai",
+          "correct": true
+        },
+        "green": {
+          "answer": "Gremlin"
+        },
+        "both": {
+          "answer": "Furby"
+        }
+      },
+      "questionImage": "python.png"
+    },
+    {
+      "id": "feed",
+      "title": "Shall there be butter under Nutella?",
+      "options": {
+        "red": {
+          "answer": "Yes!",
+          "correct": true
+        },
+        "green": {
+          "answer": "Err, no"
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
