@@ -38,8 +38,8 @@
     {
       "id": "swallow",
       "title": "What is the airspeed velocity of an unladen swallow?",
-      "questionImage": "swallow.png",
-      "answerImage": null,
+      "questionImage": "default.png",
+      "answerImage": "swallow.png",
       "explanation": "It's just the right answer",
       "options": {
         "red": {
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": "lick",
+      "id": "lick1",
       "title": "Can you lick it?",
       "description": "Palladium",
       "questionImage": "default.png",
@@ -69,6 +69,242 @@
         },
         "both": null
       }
+    },
+    {
+      "id": "lick2",
+      "title": "Can you lick it?",
+      "description": "Rubidium ",
+      "questionImage": "default.png",
+      "answerImage": null,
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "It tastes like sunshine"
+        },
+        "green": {
+          "answer": "Please don't do that",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick3",
+      "title": "Can you lick it?",
+      "description": "Moscovium",
+      "questionImage": "default.png",
+      "answerImage": null,
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "With a hint of banana"
+        },
+        "green": {
+          "answer": "It tastes like radioactive death",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick4",
+      "title": "Can you lick it?",
+      "description": "Xenon",
+      "questionImage": "default.png",
+      "answerImage": null,
+      "explanation": "But it is a gas",
+      "options": {
+        "red": {
+          "answer": "Some already tried, but you cannot ask them anymore"
+        },
+        "green": {
+          "answer": "We'll never know, but it's probably even good for you",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "null-index",
+      "title": "Array indexes: do they start at 0 or 1?",
+      "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
+      "options": {
+        "red": {
+          "answer": "1 — because the first element IS element one"
+        },
+        "green": {
+          "answer": "0 — because memory offsets start at zero",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "tabs-spaces",
+      "title": "Tabs or spaces for indentation?",
+      "explanation": "Python PEP 8 recommends spaces. The Linux kernel uses tabs. The debate has been raging since 1978 and no one has won.",
+      "options": {
+        "red": {
+          "answer": "Tabs — one character, configurable width, semantically correct"
+        },
+        "green": {
+          "answer": "Spaces — consistent rendering everywhere",
+          "correct": true
+        },
+        "both": {
+          "answer": "It doesn't matter as long as you're consistent"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "half-life",
+      "title": "Half-Life 3: confirmed or not?",
+      "explanation": "As of 2024, Half-Life 3 has not been officially announced. Half-Life: Alyx (2020) is the closest thing. The silence is deafening.",
+      "options": {
+        "red": {
+          "answer": "Yes, obviously"
+        },
+        "green": {
+          "answer": "Not confirmed.",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "tcpip",
+      "title": "TCP vs UDP: which one guarantees delivery?",
+      "explanation": "TCP (Transmission Control Protocol) guarantees ordered, reliable delivery with acknowledgements. UDP is fire-and-forget — faster but no guarantees.",
+      "options": {
+        "red": {
+          "answer": "UDP"
+        },
+        "green": {
+          "answer": "TCP",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "regex",
+      "title": "You use a regular expression to solve a problem. Now you have:",
+      "explanation": "This is a famous quote by Jamie Zawinski: \"Some people, when confronted with a problem, think 'I know, I'll use regular expressions.' Now they have two problems.\"",
+      "options": {
+        "red": {
+          "answer": "A clean, maintainable solution"
+        },
+        "green": {
+          "answer": "Two problems",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "linus-torvalds",
+      "title": "Linus Torvalds created Linux. What else did he create?",
+      "explanation": "Linus Torvalds created Git in 2005 in just 10 days, after the Linux kernel community lost access to BitKeeper. He named it after himself — 'git' is British slang for an unpleasant person.",
+      "options": {
+        "red": {
+          "answer": "Firefox"
+        },
+        "green": {
+          "answer": "Git",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "dark-mode",
+      "title": "Dark mode is:",
+      "explanation": "The correct answer is scientifically obvious to any developer who has accidentally opened a white terminal at 2am.",
+      "options": {
+        "red": {
+          "answer": "A personal preference"
+        },
+        "green": {
+          "answer": "The only correct way to use a computer",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "stackoverflow",
+      "title": "You copy code from Stack Overflow. Do you understand it?",
+      "explanation": "Studies show that the majority of developers copy code from Stack Overflow without fully understanding it. The important part is that it works — until it doesn't.",
+      "options": {
+        "red": {
+          "answer": "Of course — I read every line carefully"
+        },
+        "green": {
+          "answer": "It works and that's enough",
+          "correct": true
+        },
+        "both": {
+          "answer": "I deleted the comment asking to explain the code"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "ieee754",
+      "title": "In IEEE 754 floating point: is 0.1 + 0.2 == 0.3?",
+      "explanation": "0.1 + 0.2 in IEEE 754 double precision is 0.30000000000000004, not 0.3. This trips up every developer at least once. Never use floating point for money.",
+      "options": {
+        "red": {
+          "answer": "Yes — it's basic arithmetic"
+        },
+        "green": {
+          "answer": "No — floating point rounding makes it 0.30000000000000004",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "the-matrix",
+      "title": "In The Matrix, Neo is offered two pills. Which does he take?",
+      "explanation": "Neo takes the red pill to learn the truth about the Matrix. The blue pill would have let him remain in blissful ignorance. This scene is so iconic it has become a cultural meme.",
+      "options": {
+        "red": {
+          "answer": "The red pill",
+          "correct": true
+        },
+        "green": {
+          "answer": "The blue pill"
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "vim-exit",
+      "title": "How do you exit Vim?",
+      "explanation": ":q! force-quits without saving. This is one of the most searched questions on Stack Overflow — a question about exiting Vim has over 2 million views.",
+      "options": {
+        "red": {
+          "answer": "Close the terminal"
+        },
+        "green": {
+          "answer": ":q!",
+          "correct": true
+        },
+        "both": {
+          "answer": "Reboot the server"
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }

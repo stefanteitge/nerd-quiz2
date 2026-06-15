@@ -139,14 +139,19 @@
 }
 
 .countdown-display {
-  flex: 1 1 0;
+  position: fixed;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Press Start 2P', cursive;
-  font-size: clamp(3rem, 9vw, 7rem);
+  font-size: clamp(6rem, 20vw, 18rem);
   color: var(--neon-pink);
   text-shadow: var(--shadow-pink), var(--shadow-cyan);
+  background: rgba(8, 8, 18, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  pointer-events: none;
 }
 
 .voting-panel,
