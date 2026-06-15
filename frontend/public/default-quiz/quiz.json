@@ -124,7 +124,7 @@
       }
     },
     {
-      "id": "null-index",
+      "id": "zero-index",
       "title": "Array indexes: do they start at 0 or 1?",
       "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
       "options": {
@@ -137,7 +137,7 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "zero-index.png"
     },
     {
       "id": "tabs-spaces",
@@ -171,7 +171,7 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "half-life.png"
     },
     {
       "id": "tcpip",
@@ -203,7 +203,7 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "regex.png"
     },
     {
       "id": "linus-torvalds",
@@ -318,6 +318,7 @@
           "answer": "Mister Green, I don't want to do this anymore"
         }
       },
+      "questionImage": "default.png",
       "answerImage": "flesh.png"
     },
     {
@@ -399,7 +400,7 @@
           "answer": "Furby"
         }
       },
-      "questionImage": "python.png"
+      "questionImage": "feed.png"
     },
     {
       "id": "feed",
@@ -413,7 +414,139 @@
           "answer": "Err, no"
         }
       },
+      "questionImage": "nutella.png"
+    },
+    {
+      "id": "win95",
+      "title": "When was Windows 95 released?",
+      "options": {
+        "red": {
+          "answer": "August 24, 1995",
+          "correct": true
+        },
+        "green": {
+          "answer": "May 4, 1995"
+        }
+      },
       "questionImage": "default.png"
+    },
+    {
+      "id": "floppy",
+      "title": "If you bought a 3.5 inch floppy?",
+      "explanation": "A 3.5 inch DD floppy disk typically had a storage capacity of 1.44 megabytes (MB). HD had upto 1.72 MB, but was less common.",
+      "options": {
+        "red": {
+          "answer": "DD"
+        },
+        "green": {
+          "answer": "HD",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "bf",
+      "title": "++[---------->+<]>.[--->+<]>.+++.-------------.--[--->+<]>-.+[->++<]>.[-->+++<]>++..+++++++++++++.+[->+++++<]>.",
+      "explanation": "In Brainfuck language: More Beer?",
+      "options": {
+        "red": {
+          "answer": "true",
+          "correct": true
+        },
+        "green": {
+          "answer": "false"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "myspace",
+      "title": "I had a MySpace account",
+      "options": {
+        "red": {
+          "answer": "MyWhat?"
+        },
+        "green": {
+          "answer": "yes",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "search",
+      "title": "Before Google?",
+      "options": {
+        "red": {
+          "answer": "Altavista",
+          "correct": true
+        },
+        "green": {
+          "answer": "Yahoo"
+        },
+        "both": {
+          "answer": "Metager"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "chuck",
+      "title": "Chuck Norris...",
+      "options": {
+        "red": {
+          "answer": "plugs in USB sticks perfectly the first time every time",
+          "correct": true
+        },
+        "green": {
+          "answer": "can store the value 256 in one byte",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "mario",
+      "title": "Mario was 1981 intially called:",
+      "options": {
+        "red": {
+          "answer": "Jumpman",
+          "correct": true
+        },
+        "green": {
+          "answer": "Pizzadude"
+        }
+      },
+      "questionImage": "mario.png"
+    },
+    {
+      "id": "pong",
+      "title": "Pong was ported to the PlayStation",
+      "options": {
+        "red": {
+          "answer": "true",
+          "correct": true
+        },
+        "green": {
+          "answer": "false"
+        }
+      },
+      "questionImage": "pong.png"
+    },
+    {
+      "id": "joke",
+      "title": "AI or real?",
+      "options": {
+        "red": {
+          "answer": "Human"
+        },
+        "green": {
+          "answer": "AI",
+          "correct": true
+        }
+      },
+      "questionImage": "joke.png"
     }
   ]
 }

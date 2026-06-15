@@ -10,6 +10,7 @@ export class QuizService {
   private currentQuiz: Quiz | null = null;
   private currentQuizUrl: string | null = null;
   private usedQuestionIds = new Set<string>();
+  private _questionNumber = 0;
 
   constructor(private readonly http: HttpClient) {}
 
@@ -31,6 +32,14 @@ export class QuizService {
 
   getCurrentQuizUrl(): string | null {
     return this.currentQuizUrl;
+  }
+
+  get questionNumber(): number {
+    return this._questionNumber;
+  }
+
+  get totalQuestions(): number {
+    return this.currentQuiz?.questions.length ?? 0;
   }
 
   getImageUrl(quizUrl: string, imageName: string): string {
@@ -55,10 +64,12 @@ export class QuizService {
       availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 
     this.usedQuestionIds.add(nextQuestion.id);
+    this._questionNumber += 1;
     return nextQuestion;
   }
 
   resetQuiz(): void {
     this.usedQuestionIds.clear();
+    this._questionNumber = 0;
   }
 }

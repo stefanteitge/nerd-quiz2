@@ -29,8 +29,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
   readonly countdownValue = signal(3);
   readonly votingSecondsLeft = signal(5);
   readonly votingProgress = signal(100);
-  readonly questionNumber = signal(0);
-  readonly totalQuestions = signal(0);
 
   readonly visibleImageUrl = computed<string | null>(() => {
     if (this.phase() === 'revealed' && this.answerImageUrl()) {
@@ -76,7 +74,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
   private readonly timeouts: ReturnType<typeof setTimeout>[] = [];
 
   constructor(
-    private readonly quizService: QuizService,
+    readonly quizService: QuizService,
     private readonly router: Router
   ) {}
 
@@ -86,7 +84,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
       void this.router.navigate(['/start']);
       return;
     }
-    this.totalQuestions.set(quiz.questions.length);
     this.loadNextQuestion();
   }
 
@@ -103,7 +100,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
   }
 
   nextQuestion(): void {
-    if (this.questionNumber() > 0 && this.questionNumber() % 10 === 0) {
+    if (this.quizService.questionNumber > 0 && this.quizService.questionNumber % 10 === 0) {
       void this.router.navigate(['/intro']);
     } else {
       this.loadNextQuestion();
@@ -127,6 +124,11 @@ export class QuestionComponent implements OnInit, OnDestroy {
     }
   }
 
+  @HostListener('document:keydown.s')
+  onSkip(): void {
+    this.loadNextQuestion();
+  }
+
   private loadNextQuestion(): void {
     this.clearTimers();
     const nextQuestion = this.quizService.getNextQuestion();
@@ -142,7 +144,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
     this.countdownValue.set(3);
     this.votingSecondsLeft.set(5);
     this.votingProgress.set(100);
-    this.questionNumber.update((n) => n + 1);
 
     const quizUrl = this.quizService.getCurrentQuizUrl();
     this.questionImageUrl.set(

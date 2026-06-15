@@ -3,7 +3,7 @@
     <section class="page-card question-card">
       <header class="question-header">
         <div>
-          <p class="page-eyebrow">Question {{ questionNumber() }} / {{ totalQuestions() }}</p>
+          <p class="page-eyebrow">Question {{ quizService.questionNumber }} / {{ quizService.totalQuestions }}</p>
           <h1 class="page-title question-title">{{ currentQuestion()!.title }}</h1>
           @if (currentQuestion()!.description) {
             <p class="question-description">{{ currentQuestion()!.description }}</p>
