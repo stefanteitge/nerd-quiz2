@@ -3,7 +3,7 @@
     {
       "id": "jedi",
       "title": "Which of the following is not a type of Force user?",
-      "questionImage": "one.png",
+      "questionImage": "jedi.png",
       "answerImage": null,
       "options": {
         "red": {
