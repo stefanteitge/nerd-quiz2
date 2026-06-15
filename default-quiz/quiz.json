@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": "jedi",
+      "title": "Which of the following is not a type of Force user?",
+      "questionImage": "one.png",
+      "answerImage": null,
+      "options": {
+        "red": {
+          "answer": "Jaws"
+        },
+        "green": {
+          "answer": "Jedi",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "kernel",
+      "title": "Line 577 of bat_v_elp.cin Linux kernel",
+      "questionImage": "one.png",
+      "answerImage": null,
+      "explanation": "B.A.T.M.A.N. is a routing protocol for multi-hop mobile ad hoc networks which is under development by the German Freifunk community.",
+      "options": {
+        "red": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATWOMAN_V\") != 0)"
+        },
+        "green": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATMAN_V\") != 0)",
+          "correct": true
+        },
+        "both": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BAT*_V\") != 0)"
+        }
+      }
+    }
+  ]
+}
