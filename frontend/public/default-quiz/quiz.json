@@ -2,16 +2,15 @@
   "questions": [
     {
       "id": "jedi",
-      "title": "Which of the following is not a type of Force user?",
+      "title": "In Episode 4 Ivar makes a big achievement on Mandor?",
       "questionImage": "jedi.png",
       "answerImage": null,
       "options": {
         "red": {
-          "answer": "Jaws"
+          "answer": "He was promoted to a Sarth Lord"
         },
         "green": {
-          "answer": "Jedi",
-          "correct": true
+          "answer": "He infiltrated the One True Leader of Gorum's Inner Circle"
         },
         "both": null
       }
@@ -236,25 +235,7 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
-    },
-    {
-      "id": "stackoverflow",
-      "title": "You copy code from Stack Overflow. Do you understand it?",
-      "explanation": "Studies show that the majority of developers copy code from Stack Overflow without fully understanding it. The important part is that it works — until it doesn't.",
-      "options": {
-        "red": {
-          "answer": "Of course — I read every line carefully"
-        },
-        "green": {
-          "answer": "It works and that's enough",
-          "correct": true
-        },
-        "both": {
-          "answer": "I deleted the comment asking to explain the code"
-        }
-      },
-      "questionImage": "default.png"
+      "questionImage": "dark-mode.png"
     },
     {
       "id": "ieee754",
@@ -278,13 +259,15 @@
       "explanation": "Neo takes the red pill to learn the truth about the Matrix. The blue pill would have let him remain in blissful ignorance. This scene is so iconic it has become a cultural meme.",
       "options": {
         "red": {
+          "answer": "The blue pill"
+        },
+        "green": {
           "answer": "The red pill",
           "correct": true
         },
-        "green": {
-          "answer": "The blue pill"
-        },
-        "both": null
+        "both": {
+          "answer": "The green pill"
+        }
       },
       "questionImage": "default.png"
     },
@@ -305,6 +288,68 @@
         }
       },
       "questionImage": "default.png"
+    },
+    {
+      "id": "dog",
+      "title": "Is a hot dog a sandwich?",
+      "options": {
+        "red": {
+          "answer": "yes"
+        },
+        "green": {
+          "answer": "No",
+          "correct": true
+        },
+        "both": {
+          "answer": "It depends"
+        }
+      },
+      "questionImage": "hotdog.png"
+    },
+    {
+      "id": "flesh",
+      "title": "Just a flesh wound.",
+      "options": {
+        "red": {
+          "answer": "The Black Knight always triumphs!",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mister Green, I don't want to do this anymore"
+        }
+      },
+      "answerImage": "flesh.png"
+    },
+    {
+      "id": "hitchhiker",
+      "title": "What's on The Hitchhiker's Guide to the Galaxies cover.",
+      "options": {
+        "red": {
+          "answer": "Don't Panic",
+          "correct": true
+        },
+        "green": {
+          "answer": "A story of towels"
+        }
+      },
+      "answerImage": "default.png"
+    },
+    {
+      "id": "square-root",
+      "title": "The square root of 1760929 is?",
+      "options": {
+        "red": {
+          "answer": "1407"
+        },
+        "green": {
+          "answer": "1337"
+        },
+        "both": {
+          "answer": "Something else",
+          "correct": true
+        }
+      },
+      "answerImage": "square-root.png"
     }
   ]
 }

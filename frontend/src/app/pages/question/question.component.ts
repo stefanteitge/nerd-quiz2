@@ -103,7 +103,11 @@ export class QuestionComponent implements OnInit, OnDestroy {
   }
 
   nextQuestion(): void {
-    this.loadNextQuestion();
+    if (this.questionNumber() > 0 && this.questionNumber() % 10 === 0) {
+      void this.router.navigate(['/intro']);
+    } else {
+      this.loadNextQuestion();
+    }
   }
 
   getOptionClass(option: QuestionOptionViewModel): string {

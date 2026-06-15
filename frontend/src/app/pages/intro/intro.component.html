@@ -1,0 +1,12 @@
+<div class="intro-stage">
+  @for (item of items; track item.text) {
+    <span
+      class="float-text"
+      [style.left.%]="item.x"
+      [style.top.%]="item.y"
+      [style.font-size.rem]="item.fontSize"
+      [style.color]="item.color"
+      [style.animation]="item.animation"
+    >{{ item.text }}</span>
+  }
+</div>

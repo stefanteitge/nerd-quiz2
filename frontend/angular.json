@@ -24,6 +24,9 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "outputPath": "dist/frontend",
+            "optimization": {
+              "fonts": { "inline": false }
+            },
             "assets": [
               {
                 "glob": "**/*",

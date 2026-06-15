@@ -58,7 +58,7 @@ export class StartComponent {
 
     try {
       await firstValueFrom(this.quizService.loadQuiz(normalizedUrl));
-      await this.router.navigate(['/question']);
+      await this.router.navigate(['/intro']);
     } catch {
       this.errorMessage =
         'Unable to load that quiz source. Double-check the raw GitHub URL and try again.';
