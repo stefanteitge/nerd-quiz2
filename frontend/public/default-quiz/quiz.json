@@ -219,7 +219,7 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "linus-torvalds.png"
     },
     {
       "id": "dark-mode",
@@ -251,10 +251,10 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "ieee.png"
     },
     {
-      "id": "the-matrix",
+      "id": "matrix",
       "title": "In The Matrix, Neo is offered two pills. Which does he take?",
       "explanation": "Neo takes the red pill to learn the truth about the Matrix. The blue pill would have let him remain in blissful ignorance. This scene is so iconic it has become a cultural meme.",
       "options": {
@@ -269,7 +269,7 @@
           "answer": "The green pill"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "matrix.png"
     },
     {
       "id": "vim-exit",
@@ -508,7 +508,7 @@
     },
     {
       "id": "mario",
-      "title": "Mario was 1981 intially called:",
+      "title": "Initially in 1981 Mario was called...",
       "options": {
         "red": {
           "answer": "Jumpman",
@@ -547,6 +547,150 @@
         }
       },
       "questionImage": "joke.png"
+    },
+    {
+      "id": "mate",
+      "title": "Which is the right one?",
+      "options": {
+        "red": {
+          "answer": "Mio Mate"
+        },
+        "green": {
+          "answer": "Club Mate",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "quote",
+      "title": "\"If debugging is the process of removing software bugs, then programming must be the process of putting them in.\"",
+      "options": {
+        "red": {
+          "answer": "Martin Fowler"
+        },
+        "green": {
+          "answer": "Edsger Dijkstra",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "snake",
+      "title": "The first Snake release was on the Nokia...",
+      "options": {
+        "red": {
+          "answer": "3310"
+        },
+        "green": {
+          "answer": "6110",
+          "correct": true
+        }
+      },
+      "questionImage": "snake.png"
+    },
+    {
+      "id": "moon",
+      "title": "Who thinks there is a rabbit on the moon?",
+      "options": {
+        "red": {
+          "answer": "Mexicans"
+        },
+        "green": {
+          "answer": "Japanese",
+          "correct": true
+        }
+      },
+      "questionImage": "moon.png"
+    },
+    {
+      "id": "muffin",
+      "title": "Which nationality is the cat Muffin?",
+      "options": {
+        "red": {
+          "answer": "Dutch",
+          "correct": true
+        },
+        "green": {
+          "answer": "French"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "sailor",
+      "title": "Both Sailor Moon and Sailor Venus are blond?",
+      "options": {
+        "red": {
+          "answer": "Sure, I watched all of the episodes",
+          "correct": true
+        },
+        "green": {
+          "answer": "I watched the series where they played soccer, so I don't know"
+        },
+        "both": {
+          "answer": "WTF?"
+        }
+      },
+      "questionImage": "sailor.png"
+    },
+    {
+      "id": "iq",
+      "title": "What is Sheldon Cooper's IQ?",
+      "options": {
+        "red": {
+          "answer": "187",
+          "correct": true
+        },
+        "green": {
+          "answer": "195"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "tron",
+      "title": "The Dude from The Big Lebowski also played in Tron?",
+      "explanation": "Jeff Bridges played both The Dude in The Big Lebowski and Kevin Flynn in Tron. He's a versatile actor with a long career.",
+      "options": {
+        "red": {
+          "answer": "yes",
+          "correct": true
+        },
+        "green": {
+          "answer": "no"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "Spock",
+      "title": "Spocks full name is?",
+      "options": {
+        "red": {
+          "answer": "Spoc'kh In Tiga'n"
+        },
+        "green": {
+          "answer": "S'chn T'gai Spock",
+          "correct": true
+        }
+      },
+      "questionImage": "shpock.png"
+    },
+    {
+      "id": "lego",
+      "title": "The Lego set Computer Science and AI has which number?",
+      "options": {
+        "red": {
+          "answer": "41337"
+        },
+        "green": {
+          "answer": "45522",
+          "correct": true
+        }
+      },
+      "questionImage": "lego.png"
     }
   ]
 }
