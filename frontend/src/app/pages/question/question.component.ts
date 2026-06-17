@@ -63,8 +63,10 @@ export class QuestionComponent implements OnInit, OnDestroy {
       case 'voting':
         return `Voting... ${this.votingSecondsLeft()}s`;
       case 'revealed': {
-        const correctOption = this.options().find((o) => o.correct);
-        return correctOption ? `Correct answer: ${correctOption.label}` : 'Reveal!';
+        const correctOptions = this.options().filter((o) => o.correct);
+        if (correctOptions.length === 0) return 'Reveal!';
+        const labels = correctOptions.map((o) => o.label).join(' + ');
+        return `Correct: ${labels}`;
       }
       default:
         return 'Read the question, then smash VOTE!';

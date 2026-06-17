@@ -428,7 +428,7 @@
           "answer": "May 4, 1995"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "win95.png"
     },
     {
       "id": "floppy",
@@ -443,7 +443,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "bf",
@@ -458,7 +458,7 @@
           "answer": "false"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default2.png"
     },
     {
       "id": "myspace",
@@ -472,7 +472,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "search",
@@ -489,7 +489,7 @@
           "answer": "Metager"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default2.png"
     },
     {
       "id": "chuck",
@@ -504,7 +504,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "mario",
@@ -537,6 +537,7 @@
     {
       "id": "joke",
       "title": "AI or real?",
+      "explanation": "Gemini did it.",
       "options": {
         "red": {
           "answer": "Human"
@@ -616,7 +617,7 @@
           "answer": "French"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "muffin.png"
     },
     {
       "id": "sailor",
@@ -691,6 +692,83 @@
         }
       },
       "questionImage": "lego.png"
+    },
+    {
+      "id": "libra",
+      "title": "What is the meaning of the # symbol?",
+      "explanation": "It is called libra in Roman and is a pound. In British English ist was used for the pound sterling. An then for the pound weight.",
+      "options": {
+        "red": {
+          "answer": "12 yards"
+        },
+        "green": {
+          "answer": "pound weight",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "csharp",
+      "title": "Is it...?",
+      "explanation": "It is c Sharp not C Hash.",
+      "options": {
+        "red": {
+          "answer": "C#"
+        },
+        "green": {
+          "answer": "C♯",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "at",
+      "title": "They call the @...",
+      "options": {
+        "red": {
+          "answer": "Snail in Italy",
+          "correct": true
+        },
+        "green": {
+          "answer": "Monkeytail in Netherlands",
+          "correct": true
+        },
+        "both": {
+          "answer": "Ötti in Hungarian"
+        }
+      },
+      "questionImage": "at.png"
+    },
+    {
+      "id": "crow",
+      "title": "§ and ¶ are called...",
+      "options": {
+        "red": {
+          "answer": "Sectoglyph and Paraglyph"
+        },
+        "green": {
+          "answer": "Silcrow and Pilcrow",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "asterix",
+      "title": "Asterix and Obelix are named after which symbols?",
+      "explanation": "Asterisk and Obelisk (Dagger) are the names of the symbols.",
+      "options": {
+        "red": {
+          "answer": "* and †",
+          "correct": true
+        },
+        "green": {
+          "answer": "& and %"
+        }
+      },
+      "questionImage": "asterix.png"
     }
   ]
 }
