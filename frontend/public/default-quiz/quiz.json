@@ -769,6 +769,80 @@
         }
       },
       "questionImage": "asterix.png"
+    },
+    {
+      "id": "2008",
+      "title": "iPhone 3G release and International Year of the Potato",
+      "options": {
+        "red": {
+          "answer": "2008",
+          "correct": true
+        },
+        "green": {
+          "answer": "2007"
+        },
+        "both": {
+          "answer": "2009"
+        }
+      },
+      "questionImage": "2008.png"
+    },
+    {
+      "id": "1975",
+      "title": "Betamax and Viking 1 lifts of to Mars",
+      "options": {
+        "red": {
+          "answer": "1978"
+        },
+        "green": {
+          "answer": "1975",
+          "correct": true
+        }
+      },
+      "questionImage": "1975.png"
+    },
+    {
+      "id": "1983",
+      "title": "The migration of the ARPANET to TCP/IP is officially completed",
+      "options": {
+        "red": {
+          "answer": "1981"
+        },
+        "green": {
+          "answer": "1983",
+          "correct": true
+        }
+      },
+      "questionImage": "1983.png"
+    },
+    {
+      "id": "1991",
+      "title": "AOL launches and the first GSM call is made",
+      "options": {
+        "red": {
+          "answer": "1992"
+        },
+        "green": {
+          "answer": "1991",
+          "correct": true
+        }
+      },
+      "questionImage": "1991.png"
+    },
+    {
+      "id": "deathstar",
+      "title": "Death star daily running cost (estimated)",
+      "explanation": "https://raystanza.uk/posts/death-star-costs/",
+      "options": {
+        "red": {
+          "answer": "$7.7 octillion per day",
+          "correct": true
+        },
+        "green": {
+          "answer": "$5.2 septillion per day"
+        }
+      },
+      "questionImage": "deathstar.png"
     }
   ]
 }
