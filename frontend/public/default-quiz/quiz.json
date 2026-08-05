@@ -862,7 +862,7 @@
     },
     {
       "id": "baguette",
-      "title": "A baguette haw how many cuts?",
+      "title": "A baguette has how many cuts?",
       "options": {
         "red": {
           "answer": "Six"
