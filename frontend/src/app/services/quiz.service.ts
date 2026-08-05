@@ -60,7 +60,11 @@ export class QuizService {
       return null;
     }
 
-    const nextQuestion =
+    const demoQuestion = this._questionNumber === 0
+      ? availableQuestions.find((q) => q.demo === true)
+      : undefined;
+
+    const nextQuestion = demoQuestion ??
       availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 
     this.usedQuestionIds.add(nextQuestion.id);

@@ -10,6 +10,7 @@ export interface QuizQuestion {
   questionImage?: string | null;
   answerImage?: string | null;
   explanation?: string | null;
+  demo?: boolean;
   options: {
     red?: QuizOption | null;
     green?: QuizOption | null;

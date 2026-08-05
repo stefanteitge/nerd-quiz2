@@ -7,13 +7,15 @@
       "answerImage": null,
       "options": {
         "red": {
-          "answer": "He was promoted to a Sarth Lord"
+          "answer": "He was promoted to a Sarth Lord",
+          "correct": true
         },
         "green": {
-          "answer": "He infiltrated the One True Leader of Gorum's Inner Circle"
+          "answer": "He infiltrated Gorum's Inner Circle"
         },
         "both": null
-      }
+      },
+      "demo": true
     },
     {
       "id": "kernel",
@@ -871,6 +873,23 @@
         },
         "both": {
           "answer": "Four"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "nasal_cycle",
+      "title": "What is you current nasal cycle?",
+      "options": {
+        "red": {
+          "answer": "Left nostril",
+          "correct": true
+        },
+        "green": {
+          "answer": "Right nostril"
+        },
+        "both": {
+          "answer": "I cannot determine it"
         }
       },
       "questionImage": "default.png"
