@@ -216,3 +216,31 @@
   border-color: var(--neon-cyan);
   box-shadow: var(--shadow-cyan);
 }
+
+/* ── Demo badge ── */
+@keyframes demo-flash {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px var(--neon-pink), 0 0 22px var(--neon-pink);
+  }
+  50% {
+    opacity: 0.25;
+    box-shadow: none;
+  }
+}
+
+.demo-badge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.85rem;
+  border: 2px solid var(--neon-pink);
+  border-radius: 999px;
+  background: rgba(255, 0, 128, 0.12);
+  color: var(--neon-pink);
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(0.55rem, 1vw, 0.75rem);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  animation: demo-flash 1s ease-in-out infinite;
+}
+
