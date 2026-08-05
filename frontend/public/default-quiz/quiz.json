@@ -844,5 +844,20 @@
       },
       "questionImage": "deathstar.png"
     }
+  ,
+    {
+      "id": "chewbacka",
+      "title": "Chewbacka from Start Wars is from the which planet?",
+      "options": {
+        "red": {
+          "answer": "Kashyyyk",
+          "correct": true
+        },
+        "green": {
+          "answer": "Kashxyzk"
+        }
+      },
+      "questionImage": "deathstar.png"
+    }
   ]
 }
