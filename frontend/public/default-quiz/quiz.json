@@ -843,8 +843,7 @@
         }
       },
       "questionImage": "deathstar.png"
-    }
-  ,
+    },
     {
       "id": "chewbacka",
       "title": "Chewbacka from Start Wars is from the which planet?",
@@ -857,7 +856,24 @@
           "answer": "Kashxyzk"
         }
       },
-      "questionImage": "deathstar.png"
+      "questionImage": "default.png"
+    },
+    {
+      "id": "baguette",
+      "title": "A baguette haw how many cuts?",
+      "options": {
+        "red": {
+          "answer": "Six"
+        },
+        "green": {
+          "answer": "Five",
+          "correct": true
+        },
+        "both": {
+          "answer": "Four"
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
