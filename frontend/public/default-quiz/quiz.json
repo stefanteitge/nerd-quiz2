@@ -893,6 +893,21 @@
         }
       },
       "questionImage": "default.png"
+    },
+    {
+      "id": "giraffe",
+      "title": "How many cervical vertebra do Giraffes have?",
+      "explanation": "Nearly all mammals have 7, three finger sloths have 9 or 10",
+      "options": {
+        "red": {
+          "answer": "A much a three finger sloths"
+        },
+        "green": {
+          "answer": "As much as a whale",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
