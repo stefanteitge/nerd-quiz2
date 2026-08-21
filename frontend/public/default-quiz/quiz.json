@@ -2,18 +2,20 @@
   "questions": [
     {
       "id": "jedi",
-      "title": "In Episode 4 Ivar makes a big achievement on Mandor?",
+      "title": "This is Garry",
       "questionImage": "jedi.png",
       "answerImage": null,
       "options": {
         "red": {
-          "answer": "He was promoted to a Sarth Lord",
-          "correct": true
+          "answer": "No way, he was part of Episode 4"
         },
         "green": {
-          "answer": "He infiltrated Gorum's Inner Circle"
+          "answer": "He was part of Episode 5"
         },
-        "both": null
+        "both": {
+          "answer": "That is a blatant lie",
+          "correct": true
+        }
       },
       "demo": true
     },
