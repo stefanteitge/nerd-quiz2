@@ -908,6 +908,21 @@
         }
       },
       "questionImage": "default.png"
+    },
+    {
+      "id": "db",
+      "title": "My and Maria are...",
+      "explanation": "Michael 'Monty' Widenius is the main author of MySQL and MariaDB, those are his daughters",
+      "options": {
+        "red": {
+          "answer": "a pair of Shetland Ponys owned by Michael Widenius",
+        },
+        "green": {
+          "answer": "the daughters of Michael Widenius",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
