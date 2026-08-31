@@ -925,6 +925,20 @@
         }
       },
       "questionImage": "default.png"
+    },
+    {
+      "id": "elephant",
+      "title": "Can elephants jump?",
+      "options": {
+        "red": {
+          "answer": "Yes of cource"
+        },
+        "green": {
+          "answer": "No",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
