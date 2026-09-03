@@ -939,6 +939,21 @@
         }
       },
       "questionImage": "default.png"
+    },
+    {
+      "id": "ikea",
+      "title": "Where is IKEA group located?",
+      "explanation": "It resides in Delft",
+      "options": {
+        "red": {
+          "answer": "Sweder"
+        },
+        "green": {
+          "answer": "Netherlands",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
     }
   ]
 }
