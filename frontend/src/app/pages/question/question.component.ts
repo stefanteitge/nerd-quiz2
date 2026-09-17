@@ -102,7 +102,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
   }
 
   nextQuestion(): void {
-    if (this.quizService.questionNumber > 0 && this.quizService.questionNumber % 10 === 0) {
+    if (this.quizService.questionNumber == 0) {
       void this.router.navigate(['/intro']);
     } else {
       this.loadNextQuestion();

@@ -129,15 +129,15 @@
     },
     {
       "id": "zero-index",
-      "title": "Array indexes: do they start at 0 or 1?",
+      "title": "COBOL Array indexes: do they start at 0 or 1?",
       "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
       "options": {
         "red": {
-          "answer": "1 — because the first element IS element one"
+          "answer": "1",
+          "correct": true
         },
         "green": {
-          "answer": "0 — because memory offsets start at zero",
-          "correct": true
+          "answer": "0"
         },
         "both": null
       },
@@ -145,15 +145,15 @@
     },
     {
       "id": "tabs-spaces",
-      "title": "Tabs or spaces for indentation?",
+      "title": "Linux Kernel: Tabs or spaces for indentation?",
       "explanation": "Python PEP 8 recommends spaces. The Linux kernel uses tabs. The debate has been raging since 1978 and no one has won.",
       "options": {
         "red": {
-          "answer": "Tabs — one character, configurable width, semantically correct"
+          "answer": "Tabs (Tab width is 8 spaces)",
+          "correct": true
         },
         "green": {
-          "answer": "Spaces — consistent rendering everywhere",
-          "correct": true
+          "answer": "4 Spaces"
         },
         "both": {
           "answer": "It doesn't matter as long as you're consistent"
@@ -451,8 +451,8 @@
     },
     {
       "id": "bf",
-      "title": "++[---------->+<]>.[--->+<]>.+++.-------------.--[--->+<]>-.+[->++<]>.[-->+++<]>++..+++++++++++++.+[->+++++<]>.",
-      "explanation": "In Brainfuck language: More Beer?",
+      "title": "-[--->+<]>--.++++.--------.+[----->++<]>.---[----->++<]>.---.------------.++++++++.++++++++.",
+      "explanation": "In Brainfuck language: SWO rocks",
       "options": {
         "red": {
           "answer": "true",
@@ -466,13 +466,14 @@
     },
     {
       "id": "myspace",
-      "title": "I had a MySpace account",
+      "title": "I was born before MySpace existed",
       "options": {
         "red": {
-          "answer": "MyWhat?"
+          "answer": "Yes",
+          "correct": true
         },
         "green": {
-          "answer": "yes",
+          "answer": "No",
           "correct": true
         }
       },
@@ -480,17 +481,14 @@
     },
     {
       "id": "search",
-      "title": "Before Google?",
+      "title": "Biggest search engine in Germany before the US giant came?",
       "options": {
         "red": {
-          "answer": "Altavista",
+          "answer": "Fireball",
           "correct": true
         },
         "green": {
-          "answer": "Yahoo"
-        },
-        "both": {
-          "answer": "Metager"
+          "answer": "Altavista"
         }
       },
       "questionImage": "default2.png"
@@ -537,21 +535,6 @@
         }
       },
       "questionImage": "pong.png"
-    },
-    {
-      "id": "joke",
-      "title": "AI or real?",
-      "explanation": "Gemini did it.",
-      "options": {
-        "red": {
-          "answer": "Human"
-        },
-        "green": {
-          "answer": "AI",
-          "correct": true
-        }
-      },
-      "questionImage": "joke.png"
     },
     {
       "id": "mate",
@@ -951,6 +934,66 @@
         "green": {
           "answer": "Netherlands",
           "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "lava",
+      "title": "Cloudflare uses lava lamps?",
+      "explanation": "It generated randomness for their encryption keys",
+      "options": {
+        "red": {
+          "answer": "Encryption",
+          "correct": true
+        },
+        "green": {
+          "answer": "Optimizing tape storage"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "traffic-light",
+      "title": "The first traffic (1868) light failed because...",
+      "explanation": "It exploded, it was a gas burning light",
+      "options": {
+        "red": {
+          "answer": "It exploded",
+          "correct": true
+        },
+        "green": {
+          "answer": "It was torn down by the public"
+        }
+      },
+      "questionImage": "traffic-light.png"
+    },
+    {
+      "id": "pdf",
+      "title": "How wide can a PDF in Adobe Acrobat be",
+      "explanation": "Since V7 it is 15.000.000 Zoll × 15.000.000 Inches",
+      "options": {
+        "red": {
+          "answer": "381 m"
+        },
+        "green": {
+          "answer": "381 km",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "facebook",
+      "title": "Why is Facebook blue?",
+      "explanation": "Mark Zuckerberg is red-green colorblind, so blue is the color he can see best.",
+      "options": {
+        "red": {
+          "answer": "Mark Zuckerberg decided that",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mark's mom found it cute"
         }
       },
       "questionImage": "default.png"
