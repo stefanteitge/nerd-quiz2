@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": "jedi",
-      "title": "Is this is Garry?",
+      "title": "Is this Garry?",
       "questionImage": "jedi.png",
       "answerImage": null,
       "options": {
@@ -73,7 +73,7 @@
     {
       "id": "lick2",
       "title": "Can you lick it?",
-      "description": "Rubidium ",
+      "description": "Rubidium",
       "questionImage": "lick.png",
       "answerImage": "lick2.png",
       "explanation": "It's just the right answer",
@@ -324,7 +324,7 @@
     },
     {
       "id": "hitchhiker",
-      "title": "What's on The Hitchhiker's Guide to the Galaxies cover.",
+      "title": "What's on The Hitchhiker's Guide to the Galaxy cover?",
       "options": {
         "red": {
           "answer": "Don't Panic",
@@ -355,7 +355,7 @@
     },
     {
       "id": "alphabet",
-      "title": "Whats your favorite color of the alphabet?",
+      "title": "What's your favorite color of the alphabet?",
       "options": {
         "red": {
           "answer": "true"
@@ -434,7 +434,7 @@
     {
       "id": "floppy",
       "title": "If you bought a 3.5 inch floppy?",
-      "explanation": "A 3.5 inch DD floppy disk typically had a storage capacity of 1.44 megabytes (MB). HD had upto 1.72 MB, but was less common.",
+      "explanation": "A 3.5 inch DD floppy disk typically had a storage capacity of 1.44 megabytes (MB). HD had up to 1.72 MB, but was less common.",
       "options": {
         "red": {
           "answer": "DD"
@@ -652,7 +652,7 @@
     },
     {
       "id": "Spock",
-      "title": "Spocks full name is?",
+      "title": "Spock's full name is?",
       "options": {
         "red": {
           "answer": "Spoc'kh In Tiga'n"
@@ -681,7 +681,7 @@
     {
       "id": "libra",
       "title": "What is the meaning of the # symbol?",
-      "explanation": "It is called libra in Roman and is a pound. In British English ist was used for the pound sterling. An then for the pound weight.",
+      "explanation": "It is called libra in Roman and is a pound. In British English it was used for the pound sterling. And then for the pound weight.",
       "options": {
         "red": {
           "answer": "12 yards"
@@ -696,7 +696,7 @@
     {
       "id": "csharp",
       "title": "Is it...?",
-      "explanation": "It is c Sharp not C Hash.",
+      "explanation": "It is C Sharp, not C Hash.",
       "options": {
         "red": {
           "answer": "C#"
@@ -774,7 +774,7 @@
     },
     {
       "id": "1975",
-      "title": "Betamax and Viking 1 lifts of to Mars",
+      "title": "Betamax and Viking 1 lifts off to Mars",
       "options": {
         "red": {
           "answer": "1978"
@@ -831,7 +831,7 @@
     },
     {
       "id": "chewbacka",
-      "title": "Chewbacka from Star Wars is from the which planet?",
+      "title": "Chewbacca from Star Wars is from which planet?",
       "options": {
         "red": {
           "answer": "Kashyyyk",
@@ -862,7 +862,7 @@
     },
     {
       "id": "nasal_cycle",
-      "title": "What is you current nasal cycle?",
+      "title": "What is your current nasal cycle?",
       "options": {
         "red": {
           "answer": "Left nostril",
@@ -880,10 +880,10 @@
     {
       "id": "giraffe",
       "title": "How many cervical vertebra do Giraffes have?",
-      "explanation": "Nearly all mammals have 7, three finger sloths have 9 or 10",
+      "explanation": "Nearly all mammals have 7; three-fingered sloths have 9 or 10.",
       "options": {
         "red": {
-          "answer": "A much a three finger sloths"
+          "answer": "As many as three-fingered sloths"
         },
         "green": {
           "answer": "As much as a whale",
@@ -898,7 +898,7 @@
       "explanation": "Michael 'Monty' Widenius is the main author of MySQL and MariaDB, those are his daughters",
       "options": {
         "red": {
-          "answer": "a pair of Shetland Ponys owned by Michael Widenius"
+          "answer": "a pair of Shetland Ponies owned by Michael Widenius"
         },
         "green": {
           "answer": "the daughters of Michael Widenius",
@@ -923,7 +923,7 @@
     },
     {
       "id": "ikea",
-      "title": "Where is IKEA group located?",
+      "title": "Where is the IKEA Group located?",
       "explanation": "It resides in Delft",
       "options": {
         "red": {
@@ -998,7 +998,7 @@
     },
     {
       "id": "scotland",
-      "title": "Scotland national animal is...",
+      "title": "Scotland's national animal is...",
       "options": {
         "red": {
           "answer": "a Unicorn",
