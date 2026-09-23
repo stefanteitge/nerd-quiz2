@@ -2,19 +2,16 @@
   "questions": [
     {
       "id": "jedi",
-      "title": "This is Garry",
+      "title": "Is this is Garry?",
       "questionImage": "jedi.png",
       "answerImage": null,
       "options": {
         "red": {
-          "answer": "No way, he was part of Episode 4"
+          "answer": "For sure",
+          "correct": true
         },
         "green": {
-          "answer": "He was part of Episode 5"
-        },
-        "both": {
-          "answer": "That is a blatant lie",
-          "correct": true
+          "answer": "That's John"
         }
       },
       "demo": true
@@ -164,7 +161,7 @@
     {
       "id": "half-life",
       "title": "Half-Life 3: confirmed or not?",
-      "explanation": "As of 2024, Half-Life 3 has not been officially announced. Half-Life: Alyx (2020) is the closest thing. The silence is deafening.",
+      "explanation": "As of 2026, Half-Life 3 has not been officially announced. Half-Life: Alyx (2020) is the closest thing. The silence is deafening.",
       "options": {
         "red": {
           "answer": "Yes, obviously"
@@ -467,6 +464,7 @@
     {
       "id": "myspace",
       "title": "I was born before MySpace existed",
+      "explanation": "MySpace was launched in 2003",
       "options": {
         "red": {
           "answer": "Yes",
@@ -562,7 +560,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "snake",
@@ -635,7 +633,7 @@
           "answer": "195"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default2.png"
     },
     {
       "id": "tron",
@@ -693,7 +691,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "csharp",
@@ -740,7 +738,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default2.png"
     },
     {
       "id": "asterix",
@@ -833,7 +831,7 @@
     },
     {
       "id": "chewbacka",
-      "title": "Chewbacka from Start Wars is from the which planet?",
+      "title": "Chewbacka from Star Wars is from the which planet?",
       "options": {
         "red": {
           "answer": "Kashyyyk",
@@ -860,7 +858,7 @@
           "answer": "Four"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "baguette.png"
     },
     {
       "id": "nasal_cycle",
@@ -892,7 +890,7 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default2.png"
     },
     {
       "id": "db",
@@ -907,21 +905,21 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "elephant",
       "title": "Can elephants jump?",
       "options": {
         "red": {
-          "answer": "Yes of cource"
+          "answer": "Yes of course"
         },
         "green": {
           "answer": "No",
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default1.png"
     },
     {
       "id": "ikea",
@@ -955,7 +953,7 @@
     },
     {
       "id": "traffic-light",
-      "title": "The first traffic (1868) light failed because...",
+      "title": "The first traffic light failed in 1868 because...",
       "explanation": "It exploded, it was a gas burning light",
       "options": {
         "red": {
@@ -996,7 +994,66 @@
           "answer": "Mark's mom found it cute"
         }
       },
+      "questionImage": "fb.png"
+    },
+    {
+      "id": "scotland",
+      "title": "Scotland national animal is...",
+      "options": {
+        "red": {
+          "answer": "a Unicorn",
+          "correct": true
+        },
+        "green": {
+          "answer": "a Dragon"
+        }
+      },
       "questionImage": "default.png"
+    },
+    {
+      "id": "sausage",
+      "title": "The Peace Sausage of Cologne was made of",
+      "options": {
+        "red": {
+          "answer": "Soy",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mixed intestines"
+        },
+        "both": {
+          "answer": "Wheat"
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "titanic",
+      "title": "www.titanic.de is the website of...",
+      "options": {
+        "red": {
+          "answer": "a travel agency"
+        },
+        "green": {
+          "answer": "a magazine",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "bumblebee",
+      "title": "Bumblebees can, kangaroos not",
+      "options": {
+        "red": {
+          "answer": "move backwards",
+          "correct": true
+        },
+        "green": {
+          "answer": "a magazine"
+        }
+      },
+      "questionImage": "bumblebee.png"
     }
   ]
 }
