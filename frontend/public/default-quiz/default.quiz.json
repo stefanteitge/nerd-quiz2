@@ -1,0 +1,1059 @@
+{
+  "questions": [
+    {
+      "id": "jedi",
+      "title": "Is this Garry?",
+      "questionImage": "jedi.png",
+      "answerImage": null,
+      "options": {
+        "red": {
+          "answer": "For sure",
+          "correct": true
+        },
+        "green": {
+          "answer": "That's John"
+        }
+      },
+      "demo": true
+    },
+    {
+      "id": "kernel",
+      "title": "Line 577 of bat_v_elp.c in Linux kernel",
+      "questionImage": "kernel.png",
+      "answerImage": "kernel_correct.png",
+      "explanation": "B.A.T.M.A.N. is a routing protocol for multi-hop mobile ad hoc networks which is under development by the German Freifunk community.",
+      "options": {
+        "red": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATWOMAN_V\") != 0)"
+        },
+        "green": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BATMAN_V\") != 0)",
+          "correct": true
+        },
+        "both": {
+          "answer": "if (strcmp(bat_priv->algo_ops->name, \"BAT*_V\") != 0)"
+        }
+      }
+    },
+    {
+      "id": "swallow",
+      "title": "What is the airspeed velocity of an unladen swallow?",
+      "questionImage": "default.png",
+      "answerImage": "swallow.png",
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "12 knots"
+        },
+        "green": {
+          "answer": "What do you mean? An African or European swallow?",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick1",
+      "title": "Can you lick it?",
+      "description": "Palladium",
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "See you on the other side"
+        },
+        "green": {
+          "answer": "Sure, go for it",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick2",
+      "title": "Can you lick it?",
+      "description": "Rubidium",
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "It tastes like sunshine"
+        },
+        "green": {
+          "answer": "Please don't do that",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick3",
+      "title": "Can you lick it?",
+      "description": "Moscovium",
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "With a hint of banana"
+        },
+        "green": {
+          "answer": "It tastes like radioactive death",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "lick4",
+      "title": "Can you lick it?",
+      "description": "Xenon",
+      "questionImage": "lick.png",
+      "answerImage": "lick2.png",
+      "explanation": "But it is a gas",
+      "options": {
+        "red": {
+          "answer": "Some already tried, but you cannot ask them anymore"
+        },
+        "green": {
+          "answer": "We'll never know, but it's probably even good for you",
+          "correct": true
+        },
+        "both": null
+      }
+    },
+    {
+      "id": "zero-index",
+      "title": "COBOL Array indexes: do they start at 0 or 1?",
+      "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
+      "options": {
+        "red": {
+          "answer": "1",
+          "correct": true
+        },
+        "green": {
+          "answer": "0"
+        },
+        "both": null
+      },
+      "questionImage": "zero-index.png"
+    },
+    {
+      "id": "tabs-spaces",
+      "title": "Linux Kernel: Tabs or spaces for indentation?",
+      "explanation": "Python PEP 8 recommends spaces. The Linux kernel uses tabs. The debate has been raging since 1978 and no one has won.",
+      "options": {
+        "red": {
+          "answer": "Tabs (Tab width is 8 spaces)",
+          "correct": true
+        },
+        "green": {
+          "answer": "4 Spaces"
+        },
+        "both": {
+          "answer": "It doesn't matter as long as you're consistent"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "half-life",
+      "title": "Half-Life 3: confirmed or not?",
+      "explanation": "As of 2026, Half-Life 3 has not been officially announced. Half-Life: Alyx (2020) is the closest thing. The silence is deafening.",
+      "options": {
+        "red": {
+          "answer": "Yes, obviously"
+        },
+        "green": {
+          "answer": "Not confirmed.",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "half-life.png"
+    },
+    {
+      "id": "tcpip",
+      "title": "TCP vs UDP: which one guarantees delivery?",
+      "explanation": "TCP (Transmission Control Protocol) guarantees ordered, reliable delivery with acknowledgements. UDP is fire-and-forget — faster but no guarantees.",
+      "options": {
+        "red": {
+          "answer": "UDP"
+        },
+        "green": {
+          "answer": "TCP",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "regex",
+      "title": "You use a regular expression to solve a problem. Now you have:",
+      "explanation": "This is a famous quote by Jamie Zawinski: \"Some people, when confronted with a problem, think 'I know, I'll use regular expressions.' Now they have two problems.\"",
+      "options": {
+        "red": {
+          "answer": "A clean, maintainable solution"
+        },
+        "green": {
+          "answer": "Two problems",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "regex.png"
+    },
+    {
+      "id": "linus-torvalds",
+      "title": "Linus Torvalds created Linux. What else did he create?",
+      "explanation": "Linus Torvalds created Git in 2005 in just 10 days, after the Linux kernel community lost access to BitKeeper. He named it after himself — 'git' is British slang for an unpleasant person.",
+      "options": {
+        "red": {
+          "answer": "Firefox"
+        },
+        "green": {
+          "answer": "Git",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "linus-torvalds.png"
+    },
+    {
+      "id": "dark-mode",
+      "title": "Dark mode is:",
+      "explanation": "The correct answer is scientifically obvious to any developer who has accidentally opened a white terminal at 2am.",
+      "options": {
+        "red": {
+          "answer": "A personal preference"
+        },
+        "green": {
+          "answer": "The only correct way to use a computer",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "dark-mode.png"
+    },
+    {
+      "id": "ieee754",
+      "title": "In IEEE 754 floating point: is 0.1 + 0.2 == 0.3?",
+      "explanation": "0.1 + 0.2 in IEEE 754 double precision is 0.30000000000000004, not 0.3. This trips up every developer at least once. Never use floating point for money.",
+      "options": {
+        "red": {
+          "answer": "Yes — it's basic arithmetic"
+        },
+        "green": {
+          "answer": "No — floating point rounding makes it 0.30000000000000004",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "ieee.png"
+    },
+    {
+      "id": "matrix",
+      "title": "In The Matrix, Neo is offered two pills. Which does he take?",
+      "explanation": "Neo takes the red pill to learn the truth about the Matrix. The blue pill would have let him remain in blissful ignorance. This scene is so iconic it has become a cultural meme.",
+      "options": {
+        "red": {
+          "answer": "The blue pill"
+        },
+        "green": {
+          "answer": "The red pill",
+          "correct": true
+        },
+        "both": {
+          "answer": "The green pill"
+        }
+      },
+      "questionImage": "matrix.png"
+    },
+    {
+      "id": "vim-exit",
+      "title": "How do you exit Vim?",
+      "explanation": ":q! force-quits without saving. This is one of the most searched questions on Stack Overflow — a question about exiting Vim has over 2 million views.",
+      "options": {
+        "red": {
+          "answer": "Close the terminal"
+        },
+        "green": {
+          "answer": ":q!",
+          "correct": true
+        },
+        "both": {
+          "answer": "Reboot the server"
+        }
+      },
+      "questionImage": "vim.png"
+    },
+    {
+      "id": "dog",
+      "title": "Is a hot dog a sandwich?",
+      "options": {
+        "red": {
+          "answer": "yes"
+        },
+        "green": {
+          "answer": "No",
+          "correct": true
+        },
+        "both": {
+          "answer": "It depends"
+        }
+      },
+      "questionImage": "hotdog.png"
+    },
+    {
+      "id": "flesh",
+      "title": "Just a flesh wound.",
+      "options": {
+        "red": {
+          "answer": "The Black Knight always triumphs!",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mister Green, I don't want to do this anymore"
+        }
+      },
+      "questionImage": "default.png",
+      "answerImage": "flesh.png"
+    },
+    {
+      "id": "hitchhiker",
+      "title": "What's on The Hitchhiker's Guide to the Galaxy cover?",
+      "options": {
+        "red": {
+          "answer": "Don't Panic",
+          "correct": true
+        },
+        "green": {
+          "answer": "A story of towels"
+        }
+      },
+      "questionImage": "hitchhiker.png"
+    },
+    {
+      "id": "square-root",
+      "title": "The square root of 1760929 is?",
+      "options": {
+        "red": {
+          "answer": "1407"
+        },
+        "green": {
+          "answer": "1337"
+        },
+        "both": {
+          "answer": "Something else",
+          "correct": true
+        }
+      },
+      "questionImage": "square-root.png"
+    },
+    {
+      "id": "alphabet",
+      "title": "What's your favorite color of the alphabet?",
+      "options": {
+        "red": {
+          "answer": "true"
+        },
+        "green": {
+          "answer": "false",
+          "correct": true
+        }
+      },
+      "questionImage": "alphabet.png"
+    },
+    {
+      "id": "python",
+      "title": "Which is the worst programming language?",
+      "options": {
+        "red": {
+          "answer": "Python",
+          "correct": true
+        },
+        "green": {
+          "answer": "Python",
+          "correct": true
+        },
+        "both": {
+          "answer": "Python",
+          "correct": true
+        }
+      },
+      "questionImage": "python.png"
+    },
+    {
+      "id": "feed",
+      "title": "Don't feed after midnight?",
+      "options": {
+        "red": {
+          "answer": "Mogwai",
+          "correct": true
+        },
+        "green": {
+          "answer": "Gremlin"
+        },
+        "both": {
+          "answer": "Furby"
+        }
+      },
+      "questionImage": "feed.png"
+    },
+    {
+      "id": "feed",
+      "title": "Shall there be butter under Nutella?",
+      "options": {
+        "red": {
+          "answer": "Yes!",
+          "correct": true
+        },
+        "green": {
+          "answer": "Err, no"
+        }
+      },
+      "questionImage": "nutella.png"
+    },
+    {
+      "id": "win95",
+      "title": "When was Windows 95 released?",
+      "options": {
+        "red": {
+          "answer": "August 24, 1995",
+          "correct": true
+        },
+        "green": {
+          "answer": "May 4, 1995"
+        }
+      },
+      "questionImage": "win95.png"
+    },
+    {
+      "id": "floppy",
+      "title": "If you bought a 3.5 inch floppy?",
+      "explanation": "A 3.5 inch DD floppy disk typically had a storage capacity of 1.44 megabytes (MB). HD had up to 1.72 MB, but was less common.",
+      "options": {
+        "red": {
+          "answer": "DD"
+        },
+        "green": {
+          "answer": "HD",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "bf",
+      "title": "-[--->+<]>--.++++.--------.+[----->++<]>.---[----->++<]>.---.------------.++++++++.++++++++.",
+      "explanation": "In Brainfuck language: SWO rocks",
+      "options": {
+        "red": {
+          "answer": "true",
+          "correct": true
+        },
+        "green": {
+          "answer": "false"
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "myspace",
+      "title": "I was born before MySpace existed",
+      "explanation": "MySpace was launched in 2003",
+      "options": {
+        "red": {
+          "answer": "Yes",
+          "correct": true
+        },
+        "green": {
+          "answer": "No",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "search",
+      "title": "Biggest search engine in Germany before the US giant came?",
+      "options": {
+        "red": {
+          "answer": "Fireball",
+          "correct": true
+        },
+        "green": {
+          "answer": "Altavista"
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "chuck",
+      "title": "Chuck Norris...",
+      "options": {
+        "red": {
+          "answer": "plugs in USB sticks perfectly the first time every time",
+          "correct": true
+        },
+        "green": {
+          "answer": "can store the value 256 in one byte",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "mario",
+      "title": "Initially in 1981 Mario was called...",
+      "options": {
+        "red": {
+          "answer": "Jumpman",
+          "correct": true
+        },
+        "green": {
+          "answer": "Pizzadude"
+        }
+      },
+      "questionImage": "mario.png"
+    },
+    {
+      "id": "pong",
+      "title": "Pong was ported to the PlayStation",
+      "options": {
+        "red": {
+          "answer": "true",
+          "correct": true
+        },
+        "green": {
+          "answer": "false"
+        }
+      },
+      "questionImage": "pong.png"
+    },
+    {
+      "id": "mate",
+      "title": "Which is the right one?",
+      "options": {
+        "red": {
+          "answer": "Mio Mate"
+        },
+        "green": {
+          "answer": "Club Mate",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "quote",
+      "title": "\"If debugging is the process of removing software bugs, then programming must be the process of putting them in.\"",
+      "options": {
+        "red": {
+          "answer": "Martin Fowler"
+        },
+        "green": {
+          "answer": "Edsger Dijkstra",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "snake",
+      "title": "The first Snake release was on the Nokia...",
+      "options": {
+        "red": {
+          "answer": "3310"
+        },
+        "green": {
+          "answer": "6110",
+          "correct": true
+        }
+      },
+      "questionImage": "snake.png"
+    },
+    {
+      "id": "moon",
+      "title": "Who thinks there is a rabbit on the moon?",
+      "options": {
+        "red": {
+          "answer": "Mexicans"
+        },
+        "green": {
+          "answer": "Japanese",
+          "correct": true
+        }
+      },
+      "questionImage": "moon.png"
+    },
+    {
+      "id": "muffin",
+      "title": "Which nationality is the cat Muffin?",
+      "options": {
+        "red": {
+          "answer": "Dutch",
+          "correct": true
+        },
+        "green": {
+          "answer": "French"
+        }
+      },
+      "questionImage": "muffin.png"
+    },
+    {
+      "id": "sailor",
+      "title": "Both Sailor Moon and Sailor Venus are blond?",
+      "options": {
+        "red": {
+          "answer": "Sure, I watched all of the episodes",
+          "correct": true
+        },
+        "green": {
+          "answer": "I watched the series where they played soccer, so I don't know"
+        },
+        "both": {
+          "answer": "WTF?"
+        }
+      },
+      "questionImage": "sailor.png"
+    },
+    {
+      "id": "iq",
+      "title": "What is Sheldon Cooper's IQ?",
+      "options": {
+        "red": {
+          "answer": "187",
+          "correct": true
+        },
+        "green": {
+          "answer": "195"
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "tron",
+      "title": "The Dude from The Big Lebowski also played in Tron?",
+      "explanation": "Jeff Bridges played both The Dude in The Big Lebowski and Kevin Flynn in Tron. He's a versatile actor with a long career.",
+      "options": {
+        "red": {
+          "answer": "yes",
+          "correct": true
+        },
+        "green": {
+          "answer": "no"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "Spock",
+      "title": "Spock's full name is?",
+      "options": {
+        "red": {
+          "answer": "Spoc'kh In Tiga'n"
+        },
+        "green": {
+          "answer": "S'chn T'gai Spock",
+          "correct": true
+        }
+      },
+      "questionImage": "shpock.png"
+    },
+    {
+      "id": "lego",
+      "title": "The Lego set Computer Science and AI has which number?",
+      "options": {
+        "red": {
+          "answer": "41337"
+        },
+        "green": {
+          "answer": "45522",
+          "correct": true
+        }
+      },
+      "questionImage": "lego.png"
+    },
+    {
+      "id": "libra",
+      "title": "What is the meaning of the # symbol?",
+      "explanation": "It is called libra in Roman and is a pound. In British English it was used for the pound sterling. And then for the pound weight.",
+      "options": {
+        "red": {
+          "answer": "12 yards"
+        },
+        "green": {
+          "answer": "pound weight",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "csharp",
+      "title": "Is it...?",
+      "explanation": "It is C Sharp, not C Hash.",
+      "options": {
+        "red": {
+          "answer": "C#"
+        },
+        "green": {
+          "answer": "C♯",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "at",
+      "title": "They call the @...",
+      "options": {
+        "red": {
+          "answer": "Snail in Italy",
+          "correct": true
+        },
+        "green": {
+          "answer": "Monkeytail in Netherlands",
+          "correct": true
+        },
+        "both": {
+          "answer": "Ötti in Hungarian"
+        }
+      },
+      "questionImage": "at.png"
+    },
+    {
+      "id": "crow",
+      "title": "§ and ¶ are called...",
+      "options": {
+        "red": {
+          "answer": "Sectoglyph and Paraglyph"
+        },
+        "green": {
+          "answer": "Silcrow and Pilcrow",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "asterix",
+      "title": "Asterix and Obelix are named after which symbols?",
+      "explanation": "Asterisk and Obelisk (Dagger) are the names of the symbols.",
+      "options": {
+        "red": {
+          "answer": "* and †",
+          "correct": true
+        },
+        "green": {
+          "answer": "& and %"
+        }
+      },
+      "questionImage": "asterix.png"
+    },
+    {
+      "id": "2008",
+      "title": "iPhone 3G release and International Year of the Potato",
+      "options": {
+        "red": {
+          "answer": "2008",
+          "correct": true
+        },
+        "green": {
+          "answer": "2007"
+        },
+        "both": {
+          "answer": "2009"
+        }
+      },
+      "questionImage": "2008.png"
+    },
+    {
+      "id": "1975",
+      "title": "Betamax and Viking 1 lifts off to Mars",
+      "options": {
+        "red": {
+          "answer": "1978"
+        },
+        "green": {
+          "answer": "1975",
+          "correct": true
+        }
+      },
+      "questionImage": "1975.png"
+    },
+    {
+      "id": "1983",
+      "title": "The migration of the ARPANET to TCP/IP is officially completed",
+      "options": {
+        "red": {
+          "answer": "1981"
+        },
+        "green": {
+          "answer": "1983",
+          "correct": true
+        }
+      },
+      "questionImage": "1983.png"
+    },
+    {
+      "id": "1991",
+      "title": "AOL launches and the first GSM call is made",
+      "options": {
+        "red": {
+          "answer": "1992"
+        },
+        "green": {
+          "answer": "1991",
+          "correct": true
+        }
+      },
+      "questionImage": "1991.png"
+    },
+    {
+      "id": "deathstar",
+      "title": "Death star daily running cost (estimated)",
+      "explanation": "https://raystanza.uk/posts/death-star-costs/",
+      "options": {
+        "red": {
+          "answer": "$7.7 octillion per day",
+          "correct": true
+        },
+        "green": {
+          "answer": "$5.2 septillion per day"
+        }
+      },
+      "questionImage": "deathstar.png"
+    },
+    {
+      "id": "chewbacka",
+      "title": "Chewbacca from Star Wars is from which planet?",
+      "options": {
+        "red": {
+          "answer": "Kashyyyk",
+          "correct": true
+        },
+        "green": {
+          "answer": "Kashxyzk"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "baguette",
+      "title": "A baguette has how many cuts?",
+      "options": {
+        "red": {
+          "answer": "Six"
+        },
+        "green": {
+          "answer": "Five",
+          "correct": true
+        },
+        "both": {
+          "answer": "Four"
+        }
+      },
+      "questionImage": "baguette.png"
+    },
+    {
+      "id": "nasal_cycle",
+      "title": "What is your current nasal cycle?",
+      "options": {
+        "red": {
+          "answer": "Left nostril",
+          "correct": true
+        },
+        "green": {
+          "answer": "Right nostril"
+        },
+        "both": {
+          "answer": "I cannot determine it"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "giraffe",
+      "title": "How many cervical vertebra do Giraffes have?",
+      "explanation": "Nearly all mammals have 7; three-fingered sloths have 9 or 10.",
+      "options": {
+        "red": {
+          "answer": "As many as three-fingered sloths"
+        },
+        "green": {
+          "answer": "As much as a whale",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "db",
+      "title": "My and Maria are...",
+      "explanation": "Michael 'Monty' Widenius is the main author of MySQL and MariaDB, those are his daughters",
+      "options": {
+        "red": {
+          "answer": "a pair of Shetland Ponies owned by Michael Widenius"
+        },
+        "green": {
+          "answer": "the daughters of Michael Widenius",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "elephant",
+      "title": "Can elephants jump?",
+      "options": {
+        "red": {
+          "answer": "Yes of course"
+        },
+        "green": {
+          "answer": "No",
+          "correct": true
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "ikea",
+      "title": "Where is the IKEA Group located?",
+      "explanation": "It resides in Delft",
+      "options": {
+        "red": {
+          "answer": "Sweden"
+        },
+        "green": {
+          "answer": "Netherlands",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "lava",
+      "title": "Cloudflare uses lava lamps?",
+      "explanation": "It generated randomness for their encryption keys",
+      "options": {
+        "red": {
+          "answer": "Encryption",
+          "correct": true
+        },
+        "green": {
+          "answer": "Optimizing tape storage"
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "traffic-light",
+      "title": "The first traffic light failed in 1868 because...",
+      "explanation": "It exploded, it was a gas burning light",
+      "options": {
+        "red": {
+          "answer": "It exploded",
+          "correct": true
+        },
+        "green": {
+          "answer": "It was torn down by the public"
+        }
+      },
+      "questionImage": "traffic-light.png"
+    },
+    {
+      "id": "pdf",
+      "title": "How wide can a PDF in Adobe Acrobat be",
+      "explanation": "Since V7 it is 15.000.000 Zoll × 15.000.000 Inches",
+      "options": {
+        "red": {
+          "answer": "381 m"
+        },
+        "green": {
+          "answer": "381 km",
+          "correct": true
+        }
+      },
+      "questionImage": "default.png"
+    },
+    {
+      "id": "facebook",
+      "title": "Why is Facebook blue?",
+      "explanation": "Mark Zuckerberg is red-green colorblind, so blue is the color he can see best.",
+      "options": {
+        "red": {
+          "answer": "Mark Zuckerberg decided that",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mark's mom found it cute"
+        }
+      },
+      "questionImage": "fb.png"
+    },
+    {
+      "id": "scotland",
+      "title": "Scotland's national animal is...",
+      "options": {
+        "red": {
+          "answer": "a Unicorn",
+          "correct": true
+        },
+        "green": {
+          "answer": "a Dragon"
+        }
+      },
+      "questionImage": "scotland.png"
+    },
+    {
+      "id": "sausage",
+      "title": "The Peace Sausage of Cologne was made of",
+      "options": {
+        "red": {
+          "answer": "Soy",
+          "correct": true
+        },
+        "green": {
+          "answer": "Mixed intestines"
+        },
+        "both": {
+          "answer": "Wheat"
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "titanic",
+      "title": "www.titanic.de is the website of...",
+      "options": {
+        "red": {
+          "answer": "a travel agency",
+          "correct": true
+        },
+        "green": {
+          "answer": "a magazine"
+        }
+      },
+      "questionImage": "default1.png"
+    },
+    {
+      "id": "bumblebee",
+      "title": "Bumblebees can, kangaroos not",
+      "options": {
+        "red": {
+          "answer": "move backwards",
+          "correct": true
+        },
+        "green": {
+          "answer": "eat mint leaves"
+        }
+      },
+      "questionImage": "bumblebee.png"
+    }
+  ]
+}

@@ -36,23 +36,6 @@
       }
     },
     {
-      "id": "swallow",
-      "title": "What is the airspeed velocity of an unladen swallow?",
-      "questionImage": "default.png",
-      "answerImage": "swallow.png",
-      "explanation": "It's just the right answer",
-      "options": {
-        "red": {
-          "answer": "12 knots"
-        },
-        "green": {
-          "answer": "What do you mean? An African or European swallow?",
-          "correct": true
-        },
-        "both": null
-      }
-    },
-    {
       "id": "lick1",
       "title": "Can you lick it?",
       "description": "Palladium",
@@ -123,22 +106,6 @@
         },
         "both": null
       }
-    },
-    {
-      "id": "zero-index",
-      "title": "COBOL Array indexes: do they start at 0 or 1?",
-      "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
-      "options": {
-        "red": {
-          "answer": "1",
-          "correct": true
-        },
-        "green": {
-          "answer": "0"
-        },
-        "both": null
-      },
-      "questionImage": "zero-index.png"
     },
     {
       "id": "tabs-spaces",
@@ -237,22 +204,6 @@
         "both": null
       },
       "questionImage": "dark-mode.png"
-    },
-    {
-      "id": "ieee754",
-      "title": "In IEEE 754 floating point: is 0.1 + 0.2 == 0.3?",
-      "explanation": "0.1 + 0.2 in IEEE 754 double precision is 0.30000000000000004, not 0.3. This trips up every developer at least once. Never use floating point for money.",
-      "options": {
-        "red": {
-          "answer": "Yes — it's basic arithmetic"
-        },
-        "green": {
-          "answer": "No — floating point rounding makes it 0.30000000000000004",
-          "correct": true
-        },
-        "both": null
-      },
-      "questionImage": "ieee.png"
     },
     {
       "id": "matrix",
@@ -368,25 +319,6 @@
       "questionImage": "alphabet.png"
     },
     {
-      "id": "python",
-      "title": "Which is the worst programming language?",
-      "options": {
-        "red": {
-          "answer": "Python",
-          "correct": true
-        },
-        "green": {
-          "answer": "Python",
-          "correct": true
-        },
-        "both": {
-          "answer": "Python",
-          "correct": true
-        }
-      },
-      "questionImage": "python.png"
-    },
-    {
       "id": "feed",
       "title": "Don't feed after midnight?",
       "options": {
@@ -478,20 +410,6 @@
       "questionImage": "default1.png"
     },
     {
-      "id": "search",
-      "title": "Biggest search engine in Germany before the US giant came?",
-      "options": {
-        "red": {
-          "answer": "Fireball",
-          "correct": true
-        },
-        "green": {
-          "answer": "Altavista"
-        }
-      },
-      "questionImage": "default2.png"
-    },
-    {
       "id": "chuck",
       "title": "Chuck Norris...",
       "options": {
@@ -561,34 +479,6 @@
         }
       },
       "questionImage": "default1.png"
-    },
-    {
-      "id": "snake",
-      "title": "The first Snake release was on the Nokia...",
-      "options": {
-        "red": {
-          "answer": "3310"
-        },
-        "green": {
-          "answer": "6110",
-          "correct": true
-        }
-      },
-      "questionImage": "snake.png"
-    },
-    {
-      "id": "moon",
-      "title": "Who thinks there is a rabbit on the moon?",
-      "options": {
-        "red": {
-          "answer": "Mexicans"
-        },
-        "green": {
-          "answer": "Japanese",
-          "correct": true
-        }
-      },
-      "questionImage": "moon.png"
     },
     {
       "id": "muffin",
@@ -727,20 +617,6 @@
       "questionImage": "at.png"
     },
     {
-      "id": "crow",
-      "title": "§ and ¶ are called...",
-      "options": {
-        "red": {
-          "answer": "Sectoglyph and Paraglyph"
-        },
-        "green": {
-          "answer": "Silcrow and Pilcrow",
-          "correct": true
-        }
-      },
-      "questionImage": "default2.png"
-    },
-    {
       "id": "asterix",
       "title": "Asterix and Obelix are named after which symbols?",
       "explanation": "Asterisk and Obelisk (Dagger) are the names of the symbols.",
@@ -876,21 +752,6 @@
         }
       },
       "questionImage": "default.png"
-    },
-    {
-      "id": "giraffe",
-      "title": "How many cervical vertebra do Giraffes have?",
-      "explanation": "Nearly all mammals have 7; three-fingered sloths have 9 or 10.",
-      "options": {
-        "red": {
-          "answer": "As many as three-fingered sloths"
-        },
-        "green": {
-          "answer": "As much as a whale",
-          "correct": true
-        }
-      },
-      "questionImage": "default2.png"
     },
     {
       "id": "db",
@@ -1032,11 +893,11 @@
       "title": "www.titanic.de is the website of...",
       "options": {
         "red": {
-          "answer": "a travel agency"
+          "answer": "a travel agency",
+          "correct": true
         },
         "green": {
-          "answer": "a magazine",
-          "correct": true
+          "answer": "a magazine"
         }
       },
       "questionImage": "default1.png"
@@ -1050,7 +911,7 @@
           "correct": true
         },
         "green": {
-          "answer": "a magazine"
+          "answer": "eat mint leaves"
         }
       },
       "questionImage": "bumblebee.png"

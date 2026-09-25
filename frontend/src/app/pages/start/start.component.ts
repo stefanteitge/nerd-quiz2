@@ -6,8 +6,8 @@ import { firstValueFrom } from 'rxjs';
 import { QuizService } from '../../services/quiz.service';
 
 const GITHUB_DEFAULT_URL =
-  'https://raw.githubusercontent.com/stefanteitge/nerd-quiz2/main/frontend/public/default-quiz/quiz.json';
-const LOCAL_DEFAULT_URL = '/default-quiz/quiz.json';
+  'https://raw.githubusercontent.com/stefanteitge/nerd-quiz2/main/frontend/public/default-quiz/default.quiz.json';
+const LOCAL_DEFAULT_URL = '/default-quiz/default.quiz.json';
 
 @Component({
   selector: 'app-start-page',
@@ -49,7 +49,7 @@ export class StartComponent {
     const normalizedUrl = url.trim();
 
     if (!normalizedUrl) {
-      this.errorMessage = 'Enter a GitHub raw quiz.json URL to start a custom quiz.';
+      this.errorMessage = 'Enter a GitHub raw quiz JSON URL to start a custom quiz.';
       return;
     }
 
