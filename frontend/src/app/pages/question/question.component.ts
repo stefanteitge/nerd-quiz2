@@ -27,8 +27,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
   readonly answerImageUrl = signal<string | null>(null);
   readonly phase = signal<QuestionPhase>('idle');
   readonly countdownValue = signal(3);
-  readonly votingSecondsLeft = signal(5);
-  readonly votingProgress = signal(100);
 
   readonly visibleImageUrl = computed<string | null>(() => {
     if (this.phase() === 'revealed' && this.answerImageUrl()) {
@@ -54,23 +52,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
         return { key, label, answer: option.answer, correct: !!option.correct };
       })
       .filter((o): o is QuestionOptionViewModel => o !== null);
-  });
-
-  readonly phaseLabel = computed<string>(() => {
-    switch (this.phase()) {
-      case 'countdown':
-        return `Show your cards in ${this.countdownValue()}`;
-      case 'voting':
-        return `Voting... ${this.votingSecondsLeft()}s`;
-      case 'revealed': {
-        const correctOptions = this.options().filter((o) => o.correct);
-        if (correctOptions.length === 0) return 'Reveal!';
-        const labels = correctOptions.map((o) => o.label).join(' + ');
-        return `Correct: ${labels}`;
-      }
-      default:
-        return 'Read the question, then smash VOTE!';
-    }
   });
 
   private readonly timeouts: ReturnType<typeof setTimeout>[] = [];
@@ -121,6 +102,8 @@ export class QuestionComponent implements OnInit, OnDestroy {
   onEnter(): void {
     if (this.phase() === 'idle') {
       this.startVote();
+    } else if (this.phase() === 'voting') {
+      this.revealQuestion();
     } else if (this.phase() === 'revealed') {
       this.nextQuestion();
     }
@@ -144,8 +127,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
     this.currentQuestion.set(nextQuestion);
     this.phase.set('idle');
     this.countdownValue.set(3);
-    this.votingSecondsLeft.set(5);
-    this.votingProgress.set(100);
 
     const quizUrl = this.quizService.getCurrentQuizUrl();
     this.questionImageUrl.set(
@@ -173,22 +154,11 @@ export class QuestionComponent implements OnInit, OnDestroy {
 
   private startVotingWindow(): void {
     this.phase.set('voting');
-    this.votingSecondsLeft.set(5);
-    this.votingProgress.set(100);
-    this.runVotingTick();
   }
 
-  private runVotingTick(): void {
-    this.addTimeout(() => {
-      const next = this.votingSecondsLeft() - 1;
-      this.votingSecondsLeft.set(next);
-      this.votingProgress.set((next / 5) * 100);
-      if (next <= 0) {
-        this.phase.set('revealed');
-        return;
-      }
-      this.runVotingTick();
-    }, 1000);
+  private revealQuestion(): void {
+    if (this.phase() !== 'voting') return;
+    this.phase.set('revealed');
   }
 
   private addTimeout(callback: () => void, delay: number): void {
