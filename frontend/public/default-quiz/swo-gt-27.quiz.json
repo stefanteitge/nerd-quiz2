@@ -138,6 +138,38 @@
         }
       },
       "questionImage": "default2.png"
+    },
+    {
+      "id": "fish",
+      "title": "Fish always have gills. Can they have lungs?",
+      "explanation": "Lungfish have lungs and gills. They can breathe air and water.",
+      "options": {
+        "red": {
+          "answer": "No"
+        },
+        "green": {
+          "answer": "Yes",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png"
+    },
+    {
+      "id": "kangaroo",
+      "title": "There is an aquarium that houses Kangaroos. Where?",
+      "options": {
+        "red": {
+          "answer": "Sydney"
+        },
+        "green": {
+          "answer": "Vienna",
+          "correct": true
+        },
+        "both": {
+          "answer": "Altdorf im Allgäu"
+        }
+      },
+      "questionImage": "default2.png"
     }
   ]
 }
