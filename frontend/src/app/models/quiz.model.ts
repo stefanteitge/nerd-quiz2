@@ -11,6 +11,7 @@ export interface QuizQuestion {
   answerImage?: string | null;
   explanation?: string | null;
   demo?: boolean;
+  tags?: string[];
   options: {
     red?: QuizOption | null;
     green?: QuizOption | null;
