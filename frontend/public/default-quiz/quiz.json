@@ -14,7 +14,10 @@
           "answer": "That's John"
         }
       },
-      "demo": true
+      "demo": true,
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "kernel",
@@ -33,7 +36,30 @@
         "both": {
           "answer": "if (strcmp(bat_priv->algo_ops->name, \"BAT*_V\") != 0)"
         }
-      }
+      },
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "swallow",
+      "title": "What is the airspeed velocity of an unladen swallow?",
+      "questionImage": "default.png",
+      "answerImage": "swallow.png",
+      "explanation": "It's just the right answer",
+      "options": {
+        "red": {
+          "answer": "12 knots"
+        },
+        "green": {
+          "answer": "What do you mean? An African or European swallow?",
+          "correct": true
+        },
+        "both": null
+      },
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "lick1",
@@ -51,7 +77,10 @@
           "correct": true
         },
         "both": null
-      }
+      },
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "lick2",
@@ -69,7 +98,10 @@
           "correct": true
         },
         "both": null
-      }
+      },
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "lick3",
@@ -87,7 +119,10 @@
           "correct": true
         },
         "both": null
-      }
+      },
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "lick4",
@@ -105,7 +140,29 @@
           "correct": true
         },
         "both": null
-      }
+      },
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "zero-index",
+      "title": "COBOL Array indexes: do they start at 0 or 1?",
+      "explanation": "0-based indexing is used by C, Java, Python, JavaScript and most modern languages. 1-based indexing is used by MATLAB, Lua, and R. Both conventions exist — but 0 is correct in any serious language.",
+      "options": {
+        "red": {
+          "answer": "1",
+          "correct": true
+        },
+        "green": {
+          "answer": "0"
+        },
+        "both": null
+      },
+      "questionImage": "zero-index.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "tabs-spaces",
@@ -123,7 +180,10 @@
           "answer": "It doesn't matter as long as you're consistent"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "half-life",
@@ -139,7 +199,10 @@
         },
         "both": null
       },
-      "questionImage": "half-life.png"
+      "questionImage": "half-life.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "tcpip",
@@ -155,7 +218,10 @@
         },
         "both": null
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "regex",
@@ -171,7 +237,10 @@
         },
         "both": null
       },
-      "questionImage": "regex.png"
+      "questionImage": "regex.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "linus-torvalds",
@@ -187,7 +256,10 @@
         },
         "both": null
       },
-      "questionImage": "linus-torvalds.png"
+      "questionImage": "linus-torvalds.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "dark-mode",
@@ -203,7 +275,29 @@
         },
         "both": null
       },
-      "questionImage": "dark-mode.png"
+      "questionImage": "dark-mode.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "ieee754",
+      "title": "In IEEE 754 floating point: is 0.1 + 0.2 == 0.3?",
+      "explanation": "0.1 + 0.2 in IEEE 754 double precision is 0.30000000000000004, not 0.3. This trips up every developer at least once. Never use floating point for money.",
+      "options": {
+        "red": {
+          "answer": "Yes — it's basic arithmetic"
+        },
+        "green": {
+          "answer": "No — floating point rounding makes it 0.30000000000000004",
+          "correct": true
+        },
+        "both": null
+      },
+      "questionImage": "ieee.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "matrix",
@@ -221,7 +315,10 @@
           "answer": "The green pill"
         }
       },
-      "questionImage": "matrix.png"
+      "questionImage": "matrix.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "vim-exit",
@@ -239,7 +336,10 @@
           "answer": "Reboot the server"
         }
       },
-      "questionImage": "vim.png"
+      "questionImage": "vim.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "dog",
@@ -256,7 +356,10 @@
           "answer": "It depends"
         }
       },
-      "questionImage": "hotdog.png"
+      "questionImage": "hotdog.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "flesh",
@@ -271,7 +374,10 @@
         }
       },
       "questionImage": "default.png",
-      "answerImage": "flesh.png"
+      "answerImage": "flesh.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "hitchhiker",
@@ -285,7 +391,10 @@
           "answer": "A story of towels"
         }
       },
-      "questionImage": "hitchhiker.png"
+      "questionImage": "hitchhiker.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "square-root",
@@ -302,7 +411,10 @@
           "correct": true
         }
       },
-      "questionImage": "square-root.png"
+      "questionImage": "square-root.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "alphabet",
@@ -316,7 +428,32 @@
           "correct": true
         }
       },
-      "questionImage": "alphabet.png"
+      "questionImage": "alphabet.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Which is the worst programming language?",
+      "options": {
+        "red": {
+          "answer": "Python",
+          "correct": true
+        },
+        "green": {
+          "answer": "Python",
+          "correct": true
+        },
+        "both": {
+          "answer": "Python",
+          "correct": true
+        }
+      },
+      "questionImage": "python.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "feed",
@@ -333,10 +470,13 @@
           "answer": "Furby"
         }
       },
-      "questionImage": "feed.png"
+      "questionImage": "feed.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
-      "id": "feed",
+      "id": "nutella",
       "title": "Shall there be butter under Nutella?",
       "options": {
         "red": {
@@ -347,7 +487,10 @@
           "answer": "Err, no"
         }
       },
-      "questionImage": "nutella.png"
+      "questionImage": "nutella.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "win95",
@@ -361,7 +504,10 @@
           "answer": "May 4, 1995"
         }
       },
-      "questionImage": "win95.png"
+      "questionImage": "win95.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "floppy",
@@ -376,7 +522,10 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "bf",
@@ -391,7 +540,10 @@
           "answer": "false"
         }
       },
-      "questionImage": "default2.png"
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "myspace",
@@ -407,7 +559,27 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "search",
+      "title": "Biggest search engine in Germany before the US giant came?",
+      "options": {
+        "red": {
+          "answer": "Fireball",
+          "correct": true
+        },
+        "green": {
+          "answer": "Altavista"
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "chuck",
@@ -422,7 +594,10 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "mario",
@@ -436,7 +611,10 @@
           "answer": "Pizzadude"
         }
       },
-      "questionImage": "mario.png"
+      "questionImage": "mario.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "pong",
@@ -450,7 +628,10 @@
           "answer": "false"
         }
       },
-      "questionImage": "pong.png"
+      "questionImage": "pong.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "mate",
@@ -464,7 +645,10 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "quote",
@@ -478,7 +662,44 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "snake",
+      "title": "The first Snake release was on the Nokia...",
+      "options": {
+        "red": {
+          "answer": "3310"
+        },
+        "green": {
+          "answer": "6110",
+          "correct": true
+        }
+      },
+      "questionImage": "snake.png",
+      "tags": [
+        "SWOGT 27"
+      ]
+    },
+    {
+      "id": "moon",
+      "title": "Who thinks there is a rabbit on the moon?",
+      "options": {
+        "red": {
+          "answer": "Mexicans"
+        },
+        "green": {
+          "answer": "Japanese",
+          "correct": true
+        }
+      },
+      "questionImage": "moon.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "muffin",
@@ -492,7 +713,10 @@
           "answer": "French"
         }
       },
-      "questionImage": "muffin.png"
+      "questionImage": "muffin.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "sailor",
@@ -509,7 +733,10 @@
           "answer": "WTF?"
         }
       },
-      "questionImage": "sailor.png"
+      "questionImage": "sailor.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "iq",
@@ -523,7 +750,10 @@
           "answer": "195"
         }
       },
-      "questionImage": "default2.png"
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "tron",
@@ -538,7 +768,10 @@
           "answer": "no"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "Spock",
@@ -552,7 +785,10 @@
           "correct": true
         }
       },
-      "questionImage": "shpock.png"
+      "questionImage": "shpock.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "lego",
@@ -566,7 +802,10 @@
           "correct": true
         }
       },
-      "questionImage": "lego.png"
+      "questionImage": "lego.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "libra",
@@ -581,7 +820,10 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "csharp",
@@ -596,7 +838,10 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "at",
@@ -614,7 +859,27 @@
           "answer": "Ötti in Hungarian"
         }
       },
-      "questionImage": "at.png"
+      "questionImage": "at.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "crow",
+      "title": "§ and ¶ are called...",
+      "options": {
+        "red": {
+          "answer": "Sectoglyph and Paraglyph"
+        },
+        "green": {
+          "answer": "Silcrow and Pilcrow",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "asterix",
@@ -629,7 +894,10 @@
           "answer": "& and %"
         }
       },
-      "questionImage": "asterix.png"
+      "questionImage": "asterix.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "2008",
@@ -646,7 +914,10 @@
           "answer": "2009"
         }
       },
-      "questionImage": "2008.png"
+      "questionImage": "2008.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "1975",
@@ -660,7 +931,10 @@
           "correct": true
         }
       },
-      "questionImage": "1975.png"
+      "questionImage": "1975.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "1983",
@@ -674,7 +948,10 @@
           "correct": true
         }
       },
-      "questionImage": "1983.png"
+      "questionImage": "1983.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "1991",
@@ -688,7 +965,10 @@
           "correct": true
         }
       },
-      "questionImage": "1991.png"
+      "questionImage": "1991.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "deathstar",
@@ -703,7 +983,10 @@
           "answer": "$5.2 septillion per day"
         }
       },
-      "questionImage": "deathstar.png"
+      "questionImage": "deathstar.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "chewbacka",
@@ -717,7 +1000,10 @@
           "answer": "Kashxyzk"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "baguette",
@@ -734,7 +1020,10 @@
           "answer": "Four"
         }
       },
-      "questionImage": "baguette.png"
+      "questionImage": "baguette.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "nasal_cycle",
@@ -751,7 +1040,28 @@
           "answer": "I cannot determine it"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "giraffe",
+      "title": "How many cervical vertebra do Giraffes have?",
+      "explanation": "Nearly all mammals have 7; three-fingered sloths have 9 or 10.",
+      "options": {
+        "red": {
+          "answer": "As many as three-fingered sloths"
+        },
+        "green": {
+          "answer": "As much as a whale",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     },
     {
       "id": "db",
@@ -766,7 +1076,10 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "elephant",
@@ -780,7 +1093,10 @@
           "correct": true
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "ikea",
@@ -795,7 +1111,10 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "lava",
@@ -810,7 +1129,10 @@
           "answer": "Optimizing tape storage"
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "traffic-light",
@@ -825,7 +1147,10 @@
           "answer": "It was torn down by the public"
         }
       },
-      "questionImage": "traffic-light.png"
+      "questionImage": "traffic-light.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "pdf",
@@ -840,7 +1165,10 @@
           "correct": true
         }
       },
-      "questionImage": "default.png"
+      "questionImage": "default.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "facebook",
@@ -855,7 +1183,10 @@
           "answer": "Mark's mom found it cute"
         }
       },
-      "questionImage": "fb.png"
+      "questionImage": "fb.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "scotland",
@@ -869,7 +1200,10 @@
           "answer": "a Dragon"
         }
       },
-      "questionImage": "scotland.png"
+      "questionImage": "scotland.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "sausage",
@@ -886,7 +1220,10 @@
           "answer": "Wheat"
         }
       },
-      "questionImage": "default2.png"
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "titanic",
@@ -900,7 +1237,10 @@
           "answer": "a magazine"
         }
       },
-      "questionImage": "default1.png"
+      "questionImage": "default1.png",
+      "tags": [
+        "SWOGT 26"
+      ]
     },
     {
       "id": "bumblebee",
@@ -914,7 +1254,48 @@
           "answer": "eat mint leaves"
         }
       },
-      "questionImage": "bumblebee.png"
+      "questionImage": "bumblebee.png",
+      "tags": [
+        "SWOGT 26"
+      ]
+    },
+    {
+      "id": "fish",
+      "title": "Fish always have gills. Can they have lungs?",
+      "explanation": "Lungfish have lungs and gills. They can breathe air and water.",
+      "options": {
+        "red": {
+          "answer": "No"
+        },
+        "green": {
+          "answer": "Yes",
+          "correct": true
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
+    },
+    {
+      "id": "kangaroo",
+      "title": "There is an aquarium that houses Kangaroos. Where?",
+      "options": {
+        "red": {
+          "answer": "Sydney"
+        },
+        "green": {
+          "answer": "Vienna",
+          "correct": true
+        },
+        "both": {
+          "answer": "Altdorf im Allgäu"
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     }
   ]
 }

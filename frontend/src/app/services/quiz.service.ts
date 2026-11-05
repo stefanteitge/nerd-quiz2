@@ -9,6 +9,7 @@ import { Quiz, QuizQuestion } from '../models/quiz.model';
 export class QuizService {
   private currentQuiz: Quiz | null = null;
   private currentQuizUrl: string | null = null;
+  private selectedTag: string | null = null;
   private usedQuestionIds = new Set<string>();
   private _questionNumber = 0;
 
@@ -21,6 +22,7 @@ export class QuizService {
       tap((quiz) => {
         this.currentQuiz = quiz;
         this.currentQuizUrl = normalizedUrl;
+        this.selectedTag = null;
         this.resetQuiz();
       })
     );
@@ -34,12 +36,38 @@ export class QuizService {
     return this.currentQuizUrl;
   }
 
+  /** All distinct tags of the current quiz, sorted alphabetically. */
+  getAvailableTags(): string[] {
+    const tags = new Set<string>();
+    for (const question of this.currentQuiz?.questions ?? []) {
+      for (const tag of question.tags ?? []) {
+        tags.add(tag);
+      }
+    }
+    return [...tags].sort((a, b) => a.localeCompare(b));
+  }
+
+  /** Number of questions carrying the given tag, or all questions for null. */
+  countQuestions(tag: string | null): number {
+    return this.questionsFor(tag).length;
+  }
+
+  getSelectedTag(): string | null {
+    return this.selectedTag;
+  }
+
+  /** Restricts the quiz to questions with the given tag; null means all questions. */
+  selectTag(tag: string | null): void {
+    this.selectedTag = tag;
+    this.resetQuiz();
+  }
+
   get questionNumber(): number {
     return this._questionNumber;
   }
 
   get totalQuestions(): number {
-    return this.currentQuiz?.questions.length ?? 0;
+    return this.questionsFor(this.selectedTag).length;
   }
 
   getImageUrl(quizUrl: string, imageName: string): string {
@@ -52,7 +80,7 @@ export class QuizService {
       return null;
     }
 
-    const availableQuestions = this.currentQuiz.questions.filter(
+    const availableQuestions = this.questionsFor(this.selectedTag).filter(
       (question) => !this.usedQuestionIds.has(question.id)
     );
 
@@ -70,6 +98,13 @@ export class QuizService {
     this.usedQuestionIds.add(nextQuestion.id);
     this._questionNumber += 1;
     return nextQuestion;
+  }
+
+  private questionsFor(tag: string | null): QuizQuestion[] {
+    const questions = this.currentQuiz?.questions ?? [];
+    return tag === null
+      ? questions
+      : questions.filter((question) => question.tags?.includes(tag));
   }
 
   resetQuiz(): void {

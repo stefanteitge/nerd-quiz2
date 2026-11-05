@@ -72,6 +72,8 @@ This must contain a quiz.json with the questions.
 This file lists the questions as JSON.
 It also contains the right answer.
 The question images are all stored in the images sub folder.
+Each question can have a list of `tags` (e.g. `["SWOGT 26"]`).
+If the quiz has tags, the start page lets the quiz master pick one tag or all questions before the quiz begins.
 
 ## Technology
 
