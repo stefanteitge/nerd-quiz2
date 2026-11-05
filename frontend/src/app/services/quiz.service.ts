@@ -47,7 +47,7 @@ export class QuizService {
     return [...tags].sort((a, b) => a.localeCompare(b));
   }
 
-  /** Number of questions carrying the given tag, or all questions for null. */
+  /** Number of questions carrying the given tag (plus demo questions), or all questions for null. */
   countQuestions(tag: string | null): number {
     return this.questionsFor(tag).length;
   }
@@ -56,7 +56,7 @@ export class QuizService {
     return this.selectedTag;
   }
 
-  /** Restricts the quiz to questions with the given tag; null means all questions. */
+  /** Restricts the quiz to questions with the given tag; demo questions are always included. Null means all questions. */
   selectTag(tag: string | null): void {
     this.selectedTag = tag;
     this.resetQuiz();
@@ -104,7 +104,7 @@ export class QuizService {
     const questions = this.currentQuiz?.questions ?? [];
     return tag === null
       ? questions
-      : questions.filter((question) => question.tags?.includes(tag));
+      : questions.filter((question) => question.demo === true || question.tags?.includes(tag));
   }
 
   resetQuiz(): void {
