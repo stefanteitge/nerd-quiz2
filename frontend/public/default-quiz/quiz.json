@@ -1296,6 +1296,24 @@
       "tags": [
         "SWOGT 27"
       ]
+    },
+    {
+      "id": "rosenheim-bus",
+      "title": "Near Rosenheim, a bus was hit by…",
+      "explanation": "A camel hit a bus near Rosenheim. Source: https://share.google/1WZtRozfwgA53DQDK",
+      "options": {
+        "red": {
+          "answer": "a camel",
+          "correct": true
+        },
+        "green": {
+          "answer": "a koala"
+        }
+      },
+      "questionImage": "default2.png",
+      "tags": [
+        "SWOGT 27"
+      ]
     }
   ]
 }
